@@ -53,17 +53,11 @@ namespace Internom
 
         private void Registro_Visitas_Load(object sender, EventArgs e)
         {
-          
-
             llenarcombo(comboBox1);
-
 
         }
 
        
-
-      
-
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
@@ -112,6 +106,7 @@ namespace Internom
                 txtcompa.Text = "";
                 comboBox1.Text= "";
                 textBox3.Text = "";
+                txtnombre.Focus();
                 Close();
             }
 

@@ -33,12 +33,11 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.rutasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.foto = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.no = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -55,11 +54,9 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.felicitacion = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
             this.timerqr = new System.Windows.Forms.Timer(this.components);
             this.videoSourcePlayer1 = new AForge.Controls.VideoSourcePlayer();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.foto)).BeginInit();
@@ -99,21 +96,14 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // monthCalendar1
-            // 
-            this.monthCalendar1.Location = new System.Drawing.Point(671, 154);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 6;
-            this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
-            // 
             // foto
             // 
             this.foto.BackColor = System.Drawing.Color.Transparent;
             this.foto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("foto.BackgroundImage")));
             this.foto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.foto.Location = new System.Drawing.Point(167, 154);
+            this.foto.Location = new System.Drawing.Point(71, 170);
             this.foto.Name = "foto";
-            this.foto.Size = new System.Drawing.Size(71, 72);
+            this.foto.Size = new System.Drawing.Size(115, 107);
             this.foto.TabIndex = 7;
             this.foto.TabStop = false;
             this.foto.Click += new System.EventHandler(this.pictureBox2_Click);
@@ -145,13 +135,13 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // textBox1
+            // no
             // 
-            this.textBox1.Location = new System.Drawing.Point(402, 166);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(117, 20);
-            this.textBox1.TabIndex = 11;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.no.Location = new System.Drawing.Point(402, 173);
+            this.no.Name = "no";
+            this.no.Size = new System.Drawing.Size(117, 20);
+            this.no.TabIndex = 0;
+            this.no.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
@@ -320,50 +310,21 @@
             this.felicitacion.Size = new System.Drawing.Size(0, 31);
             this.felicitacion.TabIndex = 25;
             // 
-            // button5
-            // 
-            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button5.Location = new System.Drawing.Point(57, 169);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(53, 47);
-            this.button5.TabIndex = 26;
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // timerqr
-            // 
-            this.timerqr.Tick += new System.EventHandler(this.timerqr_Tick);
-            // 
             // videoSourcePlayer1
             // 
-            this.videoSourcePlayer1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("videoSourcePlayer1.BackgroundImage")));
-            this.videoSourcePlayer1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.videoSourcePlayer1.BorderColor = System.Drawing.Color.Transparent;
-            this.videoSourcePlayer1.Location = new System.Drawing.Point(21, 237);
+            this.videoSourcePlayer1.Location = new System.Drawing.Point(0, 0);
             this.videoSourcePlayer1.Name = "videoSourcePlayer1";
-            this.videoSourcePlayer1.Size = new System.Drawing.Size(217, 147);
-            this.videoSourcePlayer1.TabIndex = 27;
-            this.videoSourcePlayer1.Text = "videoSourcePlayer1";
+            this.videoSourcePlayer1.Size = new System.Drawing.Size(0, 0);
+            this.videoSourcePlayer1.TabIndex = 30;
             this.videoSourcePlayer1.VideoSource = null;
-            this.videoSourcePlayer1.Click += new System.EventHandler(this.videoSourcePlayer1_Click);
             // 
-            // comboBox1
+            // monthCalendar1
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(21, 142);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 28;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(381, 377);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(186, 30);
-            this.listBox1.TabIndex = 29;
+            this.monthCalendar1.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.monthCalendar1.Location = new System.Drawing.Point(671, 154);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 6;
+            this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
             // 
             // Principal
             // 
@@ -372,10 +333,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(901, 453);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.videoSourcePlayer1);
-            this.Controls.Add(this.button5);
             this.Controls.Add(this.felicitacion);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -390,7 +348,7 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.no);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.foto);
@@ -414,12 +372,10 @@
         #endregion
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.PictureBox foto;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Timer timer1;
@@ -437,11 +393,10 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label felicitacion;
         private System.Windows.Forms.ToolStripMenuItem rutasToolStripMenuItem;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Timer timerqr;
         private AForge.Controls.VideoSourcePlayer videoSourcePlayer1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.MonthCalendar monthCalendar1;
+        private System.Windows.Forms.TextBox no;
     }
 }
 

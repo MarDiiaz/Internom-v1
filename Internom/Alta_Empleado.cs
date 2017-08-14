@@ -133,5 +133,10 @@ namespace Internom
 
 
         }
+
+        private void txtnombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

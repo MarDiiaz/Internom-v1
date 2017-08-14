@@ -1,14 +1,7 @@
-﻿using BarcodeLib.BarcodeReader;
-using System;
+﻿using System;
 using System.ComponentModel;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
 using System.Windows.Forms;
-using AForge.Video;
-using AForge.Video.DirectShow;
-using MessagingToolkit.QRCode.Codec;
-using MessagingToolkit.QRCode.Codec.Data;
 
 
 namespace Internom
@@ -16,19 +9,18 @@ namespace Internom
     public partial class Principal : Form
     {
         SqlConnection c = new SqlConnection("Data Source=MARDIAZ\\SQLEXPRESS;Initial Catalog=internom;Initial Catalog=internom;Integrated Security=True");
-
+       
         public Principal()
         {
             InitializeComponent();
-
+            
         }
-
+       
         private void fecha_nac()
 
         {
             c.Open();
             string fecha = monthCalendar1.TodayDate.ToString();
-
             string cadcon = "Select nombre,apellidos,fecha_nacimiento from empleados where fecha_nacimiento='" + fecha + "'";
             SqlCommand cm = new SqlCommand(cadcon,c);
             SqlDataReader dat = cm.ExecuteReader();
@@ -40,32 +32,22 @@ namespace Internom
 
             }
             
-
             c.Close();
-
-
+            
         }
-        private FilterInfoCollection dispositivos;
-        private VideoCaptureDevice fuentevideo;
-        
-        
-            private void Form1_Load(object sender, EventArgs e)
+
+
+        private void Form1_activate(object sender, EventArgs e)
         {
-            fecha_nac();
-            dispositivos = new FilterInfoCollection(FilterCategory.VideoInputDevice);
-            foreach (FilterInfo x in dispositivos)
-            {
-                comboBox1.Items.Add(x.Name);
-                comboBox1.SelectedIndex = 0;
-            }
+            no.Focus();
+        }
+        
+        private void Form1_Load(object sender, EventArgs e)
+        {
            
         }
 
-        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
+      
         private void Administrador_Opening(object sender, CancelEventArgs e)
         {
 
@@ -76,15 +58,7 @@ namespace Internom
           
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ddfghjToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
+      
         private void horas_trabajada()
         {
             string fecha = monthCalendar1.TodayDate.ToString();
@@ -141,9 +115,7 @@ namespace Internom
             string fecha2 = monthCalendar1.TodayDate.ToString("yyyy/dd/Mm");
 
 
-            ///////
-
-            if (textBox1.Text == "")
+            if (no.Text == "")
 
         {
 
@@ -212,7 +184,8 @@ namespace Internom
                 id.Text = "";
                 valuehora.Text = "";
                 fechahoy.Text = "";
-                textBox1.Text = "";
+                no.Text = "";
+                no.Focus();
 
             }
         }
@@ -248,7 +221,7 @@ namespace Internom
 
             ///////
 
-            if (textBox1.Text == "")
+            if (no.Text == "")
 
             {
 
@@ -315,7 +288,9 @@ namespace Internom
                 id.Text = "";
                 valuehora.Text = "";
                 fechahoy.Text = "";
-                textBox1.Text = "";
+                no.Text = "";
+                no.Focus();
+                
 
 
             }
@@ -350,7 +325,7 @@ namespace Internom
         {
             // obtiene el nombre del empleado  que coincida con el numero de nomina ingresado
             SqlConnection con = new SqlConnection("Data Source = MARDIAZ\\SQLEXPRESS; Initial Catalog = internom; Initial Catalog = internom; Integrated Security = True");
-            string cadcon = "Select id_empleado,nombre,apellidos,cargo From empleados where no_nomina ='" + textBox1.Text + "'";
+            string cadcon = "Select id_empleado,nombre,apellidos,cargo From empleados where no_nomina ='" + no.Text + "'";
             //id_dpto.Text=(comboBox1.SelectedValue.ToString());
             SqlCommand cm = new SqlCommand(cadcon, con);
             con.Open();
@@ -381,7 +356,7 @@ namespace Internom
             DateTime dt = new DateTime();
             string fecha = monthCalendar1.TodayDate.ToString();
 
-            if (textBox1.Text == "")
+            if (no.Text == "")
 
             {
                 MessageBox.Show("INGRESA TU NO. NOMINA");
@@ -445,18 +420,21 @@ namespace Internom
                 id.Text = "";
                 valuehora.Text = "";
                 fechahoy.Text = "";
-                textBox1.Text = "";
+                no.Text = "";
+                no.Focus();
             }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             string hora = DateTime.Now.ToShortTimeString();
+           
+            no.Focused.ToString();
             string message = "Hora Entrada: " + hora;
             DateTime dt = new DateTime();
             string fecha = monthCalendar1.TodayDate.ToString();
 
-            if (textBox1.Text == "")
+            if (no.Text == "")
 
             {
                 MessageBox.Show("INGRESA TU NO. NOMINA");
@@ -519,7 +497,8 @@ namespace Internom
                 id.Text = "";
                 valuehora.Text = "";
                 fechahoy.Text = "";
-                textBox1.Text = "";
+                no.Text = "";
+                no.Focus();
             }
         }
 
@@ -551,54 +530,10 @@ namespace Internom
         {
 
         }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
        
-            timerqr.Enabled = true;
-            //Obtiene la seleccion del combobox para la camara que sera usada 
-            fuentevideo = new VideoCaptureDevice(dispositivos[comboBox1.SelectedIndex].MonikerString);
-            //emppieza el video con la camara seleccionada
-            videoSourcePlayer1.VideoSource = fuentevideo;
-            videoSourcePlayer1.Start();
-
-            
-        }
-
-        private void timerqr_Tick(object sender, EventArgs e)
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
         {
-            
-            // verificar si hay una imagen en la webcam
-            if (videoSourcePlayer1.GetCurrentVideoFrame() != null)
-            {
-                
-               BarcodeReader br = new BarcodeReader();
-                Bitmap img = new Bitmap(videoSourcePlayer1.GetCurrentVideoFrame());
-           
-                string[] resultados = BarcodeReader.read(img, BarcodeReader.CODE128);
-                img.Dispose();
-                if (resultados != null && resultados.Count() > 0)
-                {
-
-
-
-                    listBox1.Items.Add(resultados[0]);
-                   textBox1.Text = resultados[0];
-                    //timerqr.Enabled = false;
-                    videoSourcePlayer1.Stop();
-
-                }
-            }
-        }
-
-        private void videoSourcePlayer1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-
+            ;
         }
     }
 }
