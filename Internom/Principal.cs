@@ -541,7 +541,10 @@ namespace Internom
 
         private void rutasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+          
+            Rutas r = new Rutas();
+            r.Show();
+            Close();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
