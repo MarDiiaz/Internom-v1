@@ -553,8 +553,9 @@ namespace Internom
         {
        
             timerqr.Enabled = true;
+            //Obtiene la seleccion del combobox para la camara que sera usada 
             fuentevideo = new VideoCaptureDevice(dispositivos[comboBox1.SelectedIndex].MonikerString);
-
+            //emppieza el video con la camara seleccionada
             videoSourcePlayer1.VideoSource = fuentevideo;
             videoSourcePlayer1.Start();
 
@@ -570,9 +571,8 @@ namespace Internom
                 
                BarcodeReader br = new BarcodeReader();
                 Bitmap img = new Bitmap(videoSourcePlayer1.GetCurrentVideoFrame());
-
-             
-                string[] resultados = BarcodeReader.read(img, BarcodeReader.QRCODE);
+           
+                string[] resultados = BarcodeReader.read(img, BarcodeReader.CODE128);
                 img.Dispose();
                 if (resultados != null && resultados.Count() > 0)
                 {
@@ -580,9 +580,9 @@ namespace Internom
 
 
                     listBox1.Items.Add(resultados[0]);
-                   // textBox1.Text = resultados[0];
+                   textBox1.Text = resultados[0];
                     //timerqr.Enabled = false;
-                    //videoSourcePlayer1.Stop();
+                    videoSourcePlayer1.Stop();
 
                 }
             }

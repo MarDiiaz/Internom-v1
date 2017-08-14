@@ -55,7 +55,7 @@ namespace Internom
             c.Open();
             string fecha = DateTime.Today.ToString();
 
-            SqlDataAdapter da = new SqlDataAdapter("select  nombre,compañia,persona_visitada,departamento,hora_entrada,hora_salida from visitantes where fecha BETWEEN '" + txtfecha1.Text + "' AND '" + txtfecha2.Text + "'", c);
+            SqlDataAdapter da = new SqlDataAdapter("select fecha, nombre,compañia,persona_visitada,departamento,hora_entrada,hora_salida from visitantes where fecha BETWEEN '" + txtfecha1.Text + "' AND '" + txtfecha2.Text + "'", c);
             DataTable dt = new DataTable();
             da.Fill(dt);
             dataGridView1.DataSource = dt;

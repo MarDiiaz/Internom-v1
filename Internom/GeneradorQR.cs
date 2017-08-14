@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BarcodeLib;
+using ZXing.QrCode.Internal;
+using System.Drawing.Imaging;
 
 namespace Internom
 {
@@ -49,6 +52,44 @@ namespace Internom
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
 
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            BarcodeLib.Barcode Codigo = new BarcodeLib.Barcode();
+            Codigo.IncludeLabel = true;
+            panelcb.BackgroundImage = Codigo.Encode(BarcodeLib.TYPE.CODE128, textBox2.Text, Color.Black, Color.White,200,50);
+            button2.Enabled = true;
+        }
+
+        private void qrCodeImgControl1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GeneradorQR_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void qrCodeImgControl2_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Image imgfinal = (Image)panelcb.BackgroundImage.Clone();
+            SaveFileDialog Caja = new SaveFileDialog();
+            Caja.AddExtension = true;
+            Caja.Filter = "Image JPG (*.jpg)|*.jpg";
+            Caja.ShowDialog();
+            if (!string.IsNullOrEmpty(Caja.FileName))
+            {
+
+                imgfinal.Save(Caja.FileName);
+            }
+            imgfinal.Dispose();
         }
     }
 }

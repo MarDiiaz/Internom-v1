@@ -59,7 +59,11 @@
     <Reference Include="AForge.Video.DirectShow">
       <HintPath>..\..\..\..\Downloads\AForge.NET Framework-2.2.5-(libs only)\Release\AForge.Video.DirectShow.dll</HintPath>
     </Reference>
-    <Reference Include="BarcodeLib.BarcodeReader">
+    <Reference Include="BarcodeLib, Version=1.0.0.23, Culture=neutral, PublicKeyToken=5f09bda868cc39e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\BarcodeLib.1.0.0.23\lib\net20\BarcodeLib.dll</HintPath>
+    </Reference>
+    <Reference Include="BarcodeLib.BarcodeReader, Version=4.3.1.0, Culture=neutral, PublicKeyToken=00f9b35554156684, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\Downloads\BarcodeLib_NETBarcodeReader_Trial\BarcodeLib_NETBarcodeReader_Trial\BarcodeLib.BarcodeReader.dll</HintPath>
     </Reference>
     <Reference Include="Gma.QrCodeNet.Encoding">
@@ -83,6 +87,9 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="WindowsBase" />
+    <Reference Include="zxing.portable">
+      <HintPath>..\..\..\..\Downloads\ZXing.Net.0.15.0.0\portable\zxing.portable.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Alta_Empleado.cs">
