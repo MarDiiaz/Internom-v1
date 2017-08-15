@@ -57,5 +57,12 @@ namespace Internom
             rv.Show();
             Close();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            txtdias rva = new txtdias();
+            rva.Show();
+            Close();
+        }
     }
 }

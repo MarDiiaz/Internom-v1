@@ -59,11 +59,11 @@ namespace Internom
 
             ///////
 
-            if (textBox1.Text == "")
+            if (textBox1.Text == "" || comboBox1.Text=="")
 
             {
 
-                MessageBox.Show("INGRESA TU NO. NOMINA");
+                MessageBox.Show("DATOS INCOMPLETOS");
             }
 
             else
@@ -127,6 +127,7 @@ namespace Internom
                 id.Text = "";
                 valuehora.Text = "";
                 fechahoy.Text = "";
+                comboBox1.Text = "" ;
                 textBox1.Text = "";
 
 

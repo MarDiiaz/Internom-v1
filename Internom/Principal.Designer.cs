@@ -205,11 +205,11 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(267, 128);
+            this.label6.Location = new System.Drawing.Point(293, 131);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(330, 18);
+            this.label6.Size = new System.Drawing.Size(305, 18);
             this.label6.TabIndex = 19;
-            this.label6.Text = "INGRESA TU NO. NOMINA PARA REGISTRARTE";
+            this.label6.Text = "ESCANEA TU CODIGO PARA REGISTRARTE";
             // 
             // id
             // 

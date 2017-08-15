@@ -65,7 +65,7 @@ namespace Internom
             ////////////// Metodo para obtener las horas trabajadas diarias de cada trabajador 
             SqlConnection c = new SqlConnection("Data Source=MARDIAZ\\SQLEXPRESS;Initial Catalog=internom;Initial Catalog=internom;Integrated Security=True");
             SqlCommand comando;
-            comando = new SqlCommand("select fecha, hora_ingreso,hora_salida, id_empleado from horarios  where id_empleado ='" + id.Text + "' and fecha='" + fecha + "'", c);
+            comando = new SqlCommand("select fecha, hora_ingreso,hora_salida,entrada_comida,salida_comida, id_empleado from horarios  where id_empleado ='" + id.Text + "' and fecha='" + fecha + "'", c);
 
             SqlDataReader r;
             c.Open();
@@ -75,21 +75,31 @@ namespace Internom
                 string hora_ingreso = r["hora_ingreso"].ToString();
                 string id_empleado = r["id_empleado"].ToString();
                 string hora_salida = r["hora_salida"].ToString();
-                string hi = Convert.ToDateTime(hora_ingreso).ToShortTimeString(); ;
+                string entrada_comida = r["entrada_comida"].ToString();
+                string salida_comida = r["salida_comida"].ToString();
+                string ec = Convert.ToDateTime(entrada_comida).ToShortTimeString();
+                string sc = Convert.ToDateTime(salida_comida).ToShortTimeString();
+                string hi = Convert.ToDateTime(hora_ingreso).ToShortTimeString(); 
                 string hs = Convert.ToDateTime(hora_salida).ToShortTimeString();
 
                 DateTime hhi = Convert.ToDateTime(hi);
                 DateTime hhs = Convert.ToDateTime(hs);
+                DateTime hec = Convert.ToDateTime(ec);
+                DateTime hsc = Convert.ToDateTime(sc);
 
                 TimeSpan total = hhs.TimeOfDay - hhi.TimeOfDay;
                 string horas_trabajadas = total.ToString();
+                TimeSpan tiempo_com = hsc.TimeOfDay - hec.TimeOfDay;
+                TimeSpan horas_netas = total - tiempo_com;
+                string horas_trabajadas_netas = horas_netas.ToString();
+                string tiempo_comida = tiempo_com.ToString();
                 c.Close();
                 ///////////////////// FIN DEL METODO
 
               
                 SqlCommand cad;
                 c.Open();
-                cad = new SqlCommand("update horarios set horas_trabajadas='" + horas_trabajadas + "' where id_empleado='" + id.Text +"' and  fecha='" + fecha + "'", c);
+                cad = new SqlCommand("update horarios set horas_trabajadas='" + horas_trabajadas_netas + "', tiempo_comida='"+tiempo_comida+"' where id_empleado='" + id.Text +"' and  fecha='" + fecha + "'", c);
                 SqlDataReader re;
                 re = cad.ExecuteReader();
                 if (re.Read() == true)
@@ -262,7 +272,7 @@ namespace Internom
                         SqlConnection con = new SqlConnection("Data Source = MARDIAZ\\SQLEXPRESS; Initial Catalog = internom; Initial Catalog = internom; Integrated Security = True");
                         SqlCommand cadcon;
                         con.Open();
-                        cadcon = new SqlCommand("Insert into horarios (fecha,hora_ingreso,entrada_comida,salida_comida,hora_salida,horas_trabajadas,id_empleado) values ('" + fecha + "','" + hora + "','00:00','00:00','00:00','00:00'," + id.Text + ")", con);
+                        cadcon = new SqlCommand("Insert into horarios (fecha,hora_ingreso,entrada_comida,salida_comida,hora_salida,horas_trabajadas,tiempo_comida,id_empleado) values ('" + fecha + "','" + hora + "','00:00','00:00','00:00','00:00','00:00'," + id.Text + ")", con);
                         cadcon.ExecuteNonQuery();
                     }
                     catch (Exception ex)
