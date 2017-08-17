@@ -46,7 +46,7 @@ namespace Internom
         {
            
         }
-
+       
       
         private void Administrador_Opening(object sender, CancelEventArgs e)
         {
@@ -119,7 +119,7 @@ namespace Internom
         private void button2_Click(object sender, EventArgs e)
         {
             string hora = DateTime.Now.ToShortTimeString();
-            string message = "Hora Entrada: " + hora;
+            string message = "Hora Salida: " + hora;
             DateTime dt = new DateTime();
             string fecha = monthCalendar1.TodayDate.ToString();
             string fecha2 = monthCalendar1.TodayDate.ToString("yyyy/dd/Mm");
@@ -177,8 +177,8 @@ namespace Internom
 
 
                     horas_trabajada();                   
-                    MessageBox.Show(salida);
-                    MessageBox.Show(message, a);
+                 //   MessageBox.Show(salida);
+                    MessageBox.Show("HASTA MAÑANA", message );
 
                 }
                 else
@@ -279,13 +279,16 @@ namespace Internom
                     {
                         salida = "no registrado:" + ex.ToString();
                     }
-                    MessageBox.Show(salida);
-                    MessageBox.Show(message, a);
+                   // MessageBox.Show(salida);
+                    MessageBox.Show("BIENVENIDO", message);
 
                 }
                 else
                 {
-                    MessageBox.Show("HORA ENTRADA YA REGISTRADA");
+                   // MessageBox.Show("HORA ENTRADA YA REGISTRADA");
+                    button3_Click(this, new EventArgs());
+             
+
                 }
 
 
@@ -355,9 +358,10 @@ namespace Internom
 
             }
 
-
+            
 
         }
+       
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -411,13 +415,15 @@ namespace Internom
                     {
                         salida = "no registrado:" + ex.ToString();
                     }
-                    MessageBox.Show(salida);
-                    MessageBox.Show(message, a);
+                    //MessageBox.Show(salida);
+                    MessageBox.Show( "BUEN PROVECHO", message);
 
                 }
                 else
                 {
-                    MessageBox.Show("HORA ENTRADA YA REGISTRADA");
+                    //MessageBox.Show("HORA ENTRADA YA REGISTRADA");
+                    button4_Click(this, new EventArgs());
+
                 }
 
 
@@ -432,7 +438,10 @@ namespace Internom
                 fechahoy.Text = "";
                 no.Text = "";
                 no.Focus();
+                
+
             }
+           
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -488,13 +497,15 @@ namespace Internom
                     {
                         salida = "no registrado:" + ex.ToString();
                     }
-                    MessageBox.Show(salida);
+                    //MessageBox.Show(salida);
                     MessageBox.Show(message, a);
 
                 }
                 else
                 {
-                    MessageBox.Show("HORA ENTRADA YA REGISTRADA");
+                    // MessageBox.Show("HORA ENTRADA YA REGISTRADA");
+                    button2_Click(this, new EventArgs());
+
                 }
 
 

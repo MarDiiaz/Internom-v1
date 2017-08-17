@@ -101,7 +101,7 @@
             this.foto.BackColor = System.Drawing.Color.Transparent;
             this.foto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("foto.BackgroundImage")));
             this.foto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.foto.Location = new System.Drawing.Point(71, 170);
+            this.foto.Location = new System.Drawing.Point(58, 180);
             this.foto.Name = "foto";
             this.foto.Size = new System.Drawing.Size(115, 107);
             this.foto.TabIndex = 7;
@@ -111,14 +111,15 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Navy;
-            this.button1.Location = new System.Drawing.Point(281, 318);
+            this.button1.Location = new System.Drawing.Point(66, 192);
             this.button1.Name = "button1";
             this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button1.Size = new System.Drawing.Size(70, 40);
+            this.button1.Size = new System.Drawing.Size(87, 62);
             this.button1.TabIndex = 9;
-            this.button1.Text = "Entrada";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -127,17 +128,16 @@
             this.button2.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Navy;
-            this.button2.Location = new System.Drawing.Point(550, 318);
+            this.button2.Location = new System.Drawing.Point(76, 202);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(70, 40);
             this.button2.TabIndex = 10;
-            this.button2.Text = "Salida";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // no
             // 
-            this.no.Location = new System.Drawing.Point(402, 173);
+            this.no.Location = new System.Drawing.Point(439, 188);
             this.no.Name = "no";
             this.no.Size = new System.Drawing.Size(117, 20);
             this.no.TabIndex = 0;
@@ -149,7 +149,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Navy;
-            this.label1.Location = new System.Drawing.Point(279, 170);
+            this.label1.Location = new System.Drawing.Point(316, 185);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(79, 16);
             this.label1.TabIndex = 12;
@@ -161,7 +161,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(694, 327);
+            this.label3.Location = new System.Drawing.Point(704, 348);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(0, 31);
             this.label3.TabIndex = 13;
@@ -176,7 +176,7 @@
             this.textBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.textBox2.Enabled = false;
             this.textBox2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.textBox2.Location = new System.Drawing.Point(402, 199);
+            this.textBox2.Location = new System.Drawing.Point(439, 214);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(117, 20);
             this.textBox2.TabIndex = 14;
@@ -186,7 +186,7 @@
             // 
             this.textBox3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.textBox3.Enabled = false;
-            this.textBox3.Location = new System.Drawing.Point(402, 233);
+            this.textBox3.Location = new System.Drawing.Point(439, 248);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(117, 20);
             this.textBox3.TabIndex = 16;
@@ -195,7 +195,7 @@
             // 
             this.textBox4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.textBox4.Enabled = false;
-            this.textBox4.Location = new System.Drawing.Point(402, 268);
+            this.textBox4.Location = new System.Drawing.Point(439, 283);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(117, 20);
             this.textBox4.TabIndex = 18;
@@ -213,7 +213,7 @@
             // 
             // id
             // 
-            this.id.Location = new System.Drawing.Point(550, 200);
+            this.id.Location = new System.Drawing.Point(587, 215);
             this.id.Name = "id";
             this.id.Size = new System.Drawing.Size(28, 20);
             this.id.TabIndex = 20;
@@ -221,7 +221,7 @@
             // 
             // valuehora
             // 
-            this.valuehora.Location = new System.Drawing.Point(550, 226);
+            this.valuehora.Location = new System.Drawing.Point(587, 241);
             this.valuehora.Name = "valuehora";
             this.valuehora.Size = new System.Drawing.Size(28, 20);
             this.valuehora.TabIndex = 21;
@@ -229,7 +229,7 @@
             // 
             // fechahoy
             // 
-            this.fechahoy.Location = new System.Drawing.Point(550, 252);
+            this.fechahoy.Location = new System.Drawing.Point(587, 267);
             this.fechahoy.Name = "fechahoy";
             this.fechahoy.Size = new System.Drawing.Size(28, 20);
             this.fechahoy.TabIndex = 22;
@@ -242,7 +242,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Navy;
-            this.label5.Location = new System.Drawing.Point(279, 272);
+            this.label5.Location = new System.Drawing.Point(316, 287);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(45, 16);
             this.label5.TabIndex = 17;
@@ -254,7 +254,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Navy;
-            this.label4.Location = new System.Drawing.Point(279, 237);
+            this.label4.Location = new System.Drawing.Point(316, 252);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(65, 16);
             this.label4.TabIndex = 15;
@@ -266,7 +266,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Navy;
-            this.label2.Location = new System.Drawing.Point(279, 200);
+            this.label2.Location = new System.Drawing.Point(316, 215);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 16);
             this.label2.TabIndex = 3;
@@ -275,27 +275,29 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.button3.BackColor = System.Drawing.Color.White;
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Navy;
-            this.button3.Location = new System.Drawing.Point(357, 318);
+            this.button3.Location = new System.Drawing.Point(76, 202);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(89, 40);
+            this.button3.Size = new System.Drawing.Size(51, 24);
             this.button3.TabIndex = 23;
-            this.button3.Text = "Acceso Comida";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.button4.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.Navy;
-            this.button4.Location = new System.Drawing.Point(452, 318);
+            this.button4.Location = new System.Drawing.Point(82, 202);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(89, 40);
+            this.button4.Size = new System.Drawing.Size(45, 42);
             this.button4.TabIndex = 24;
-            this.button4.Text = "Termino Comida";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -328,11 +330,13 @@
             // 
             // Principal
             // 
+            this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(901, 453);
+            this.Controls.Add(this.foto);
             this.Controls.Add(this.videoSourcePlayer1);
             this.Controls.Add(this.felicitacion);
             this.Controls.Add(this.button4);
@@ -351,7 +355,6 @@
             this.Controls.Add(this.no);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.foto);
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
