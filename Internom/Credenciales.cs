@@ -70,7 +70,6 @@ namespace Internom
                 txtnombre.TextAlign = HorizontalAlignment.Center;
                 txtcargo.Text = puesto;
                 txtcargo.TextAlign = HorizontalAlignment.Center;
-
                 textBox3.Text = seguro;
                 textBox3.TextAlign = HorizontalAlignment.Center;
                 textBox4.TextAlign = HorizontalAlignment.Center;
@@ -92,26 +91,93 @@ namespace Internom
         }
 
         private void button3_Click(object sender, EventArgs e)
-        {
-            
-        }
+        { //Incializa un componente SaveFileDialog.
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            //Cuando buscas archivos te muestra todos los .bmp.
+            saveFileDialog.Filter = "JPeg Image|*.jpg|Bitmap Image|*.bmp|Gif Image|*.gif";
+            //Titulo
+            saveFileDialog.Title = "Guardar gráfico como imagen";
+            // preguntamos si elegiste un nombre de archivo.
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                //Extención del archivo por defecto segun el filtro del saveFileDialog
+                switch (saveFileDialog.FilterIndex)
+                {
+                    case 1:
+                        saveFileDialog.DefaultExt = "jpg";
+                        break;
 
+                    case 2:
+                        saveFileDialog.DefaultExt = "bmp";
+                        break;
+
+                    case 3:
+                        saveFileDialog.DefaultExt = "gif";
+                        break;
+                }
+                //Obtenemos alto y ancho del panel
+                int width = panel1.Width;
+                int height = panel1.Height;
+                //Inicializamos un objeto BitMap con las dimensiones del Panel
+                Bitmap bitMap = new Bitmap(width, height);
+                //Inicializamos un objeto Rectangle en la posicion 0,0 y con dimensiones iguales a las del panel.
+                //0,0 y las mismas dimensiones del panel porque queremos tomar todo el panel
+                // o si solo queremos tomar una parte pues podemos dar un punto de inicio diferente y dimensiones distintas.
+                Rectangle rec = new Rectangle(0, 0, width, height);
+                //Este metodo hace la magia de copiar las graficas a el objeto Bitmap
+                panel1.DrawToBitmap(bitMap, rec);
+                // Y por ultimo salvamos el archivo pasando como parametro el nombre que asignamos en el saveDialogFile
+                bitMap.Save(saveFileDialog.FileName);
+            }
+        }
         private void button5_Click(object sender, EventArgs e)
         {
-            //Image imgfinal = (Image)panel2.BackgroundImage.Clone();
-            //SaveFileDialog Caja = new SaveFileDialog();
-            //Caja.AddExtension = true;
-            //Caja.Filter = "Image JPG (*.jpg)|*.jpg";
-            //Caja.ShowDialog();
-            //if (!string.IsNullOrEmpty(Caja.FileName))
-            //{
+            //Incializa un componente SaveFileDialog.
+            SaveFileDialog save = new SaveFileDialog();
+            //Cuando buscas archivos te muestra todos los .bmp.
+          save.Filter= "JPeg Image|*.jpg|Bitmap Image|*.bmp|Gif Image|*.gif";
+            //Titulo
+            save.Title = "Guardar gráfico como imagen";
+            // preguntamos si elegiste un nombre de archivo.
+            if (save.ShowDialog() == DialogResult.OK)
+            {
+                //Extención del archivo por defecto segun el filtro del saveFileDialog
+                switch (save.FilterIndex)
+                {
+                    case 1:
+                        save.DefaultExt = "jpg";
+                        break;
 
-            //    imgfinal.Save(Caja.FileName);
-            //}
-            //imgfinal.Dispose();
+                    case 2:
+                        save.DefaultExt = "bmp";
+                        break;
+
+                    case 3:
+                        save.DefaultExt = "gif";
+                        break;
+                }
+                //Obtenemos alto y ancho del panel
+                int width = panel2.Width;
+                int height = panel2.Height;
+                //Inicializamos un objeto BitMap con las dimensiones del Panel
+                Bitmap bit = new Bitmap(width, height);
+                //Inicializamos un objeto Rectangle en la posicion 0,0 y con dimensiones iguales a las del panel.
+                //0,0 y las mismas dimensiones del panel porque queremos tomar todo el panel
+                // o si solo queremos tomar una parte pues podemos dar un punto de inicio diferente y dimensiones distintas.
+                Rectangle rec = new Rectangle(0, 0, width, height);
+                //Este metodo hace la magia de copiar las graficas a el objeto Bitmap
+                panel2.DrawToBitmap(bit, rec);
+                // Y por ultimo salvamos el archivo pasando como parametro el nombre que asignamos en el saveDialogFile
+                bit.Save(save.FileName);
+            }
         }
 
         private void Credenciales_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }

@@ -50,6 +50,7 @@
             this.button5 = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.button2 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -65,6 +66,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.txtcargo);
             this.panel1.Controls.Add(this.txtnombre);
@@ -89,7 +91,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(4, 24);
+            this.pictureBox2.Location = new System.Drawing.Point(4, 28);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(247, 100);
             this.pictureBox2.TabIndex = 1;
@@ -102,15 +104,14 @@
             this.label1.ForeColor = System.Drawing.Color.Navy;
             this.label1.Location = new System.Drawing.Point(173, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 9);
+            this.label1.Size = new System.Drawing.Size(0, 9);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Vigencia: 00-00-0000";
             // 
             // foto
             // 
             this.foto.BackColor = System.Drawing.Color.Gray;
             this.foto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.foto.Location = new System.Drawing.Point(78, 130);
+            this.foto.Location = new System.Drawing.Point(78, 132);
             this.foto.Name = "foto";
             this.foto.Size = new System.Drawing.Size(103, 110);
             this.foto.TabIndex = 11;
@@ -119,10 +120,11 @@
             // txtnombre
             // 
             this.txtnombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtnombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnombre.Location = new System.Drawing.Point(36, 256);
+            this.txtnombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtnombre.Location = new System.Drawing.Point(23, 256);
+            this.txtnombre.Multiline = true;
             this.txtnombre.Name = "txtnombre";
-            this.txtnombre.Size = new System.Drawing.Size(180, 15);
+            this.txtnombre.Size = new System.Drawing.Size(207, 20);
             this.txtnombre.TabIndex = 12;
             // 
             // txtcargo
@@ -147,17 +149,18 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.pictureBox4);
             this.panel2.Controls.Add(this.codigobarras);
             this.panel2.Controls.Add(this.pictureBox7);
             this.panel2.Controls.Add(this.textBox4);
             this.panel2.Controls.Add(this.textBox3);
-            this.panel2.Controls.Add(this.pictureBox4);
-            this.panel2.Controls.Add(this.textBox1);
             this.panel2.Controls.Add(this.pictureBox6);
-            this.panel2.Location = new System.Drawing.Point(460, 31);
+            this.panel2.Location = new System.Drawing.Point(444, 28);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(254, 379);
             this.panel2.TabIndex = 14;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // textBox1
             // 
@@ -278,17 +281,29 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // textBox2
+            // 
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.ForeColor = System.Drawing.Color.Navy;
+            this.textBox2.Location = new System.Drawing.Point(151, 12);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 13);
+            this.textBox2.TabIndex = 14;
+            this.textBox2.Text = "Vigencia:  ";
+            // 
             // Credenciales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(901, 453);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Credenciales";
             this.Text = "Credenciales";
@@ -332,5 +347,6 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
