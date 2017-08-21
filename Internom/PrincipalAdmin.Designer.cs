@@ -34,8 +34,9 @@
             this.altaEmpleadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.catalogoEmpleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.horariosEmpleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.generadorQRToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.credencialesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -47,7 +48,8 @@
             this.altaEmpleadoToolStripMenuItem,
             this.catalogoEmpleadosToolStripMenuItem,
             this.horariosEmpleadosToolStripMenuItem,
-            this.generadorQRToolStripMenuItem});
+            this.generadorQRToolStripMenuItem,
+            this.credencialesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(901, 24);
@@ -86,6 +88,22 @@
             this.horariosEmpleadosToolStripMenuItem.Text = "Horarios_Empleados";
             this.horariosEmpleadosToolStripMenuItem.Click += new System.EventHandler(this.horariosEmpleadosToolStripMenuItem_Click);
             // 
+            // generadorQRToolStripMenuItem
+            // 
+            this.generadorQRToolStripMenuItem.ForeColor = System.Drawing.Color.Navy;
+            this.generadorQRToolStripMenuItem.Name = "generadorQRToolStripMenuItem";
+            this.generadorQRToolStripMenuItem.Size = new System.Drawing.Size(93, 20);
+            this.generadorQRToolStripMenuItem.Text = "Generador QR";
+            this.generadorQRToolStripMenuItem.Click += new System.EventHandler(this.generadorQRToolStripMenuItem_Click);
+            // 
+            // credencialesToolStripMenuItem
+            // 
+            this.credencialesToolStripMenuItem.ForeColor = System.Drawing.Color.Navy;
+            this.credencialesToolStripMenuItem.Name = "credencialesToolStripMenuItem";
+            this.credencialesToolStripMenuItem.Size = new System.Drawing.Size(86, 20);
+            this.credencialesToolStripMenuItem.Text = "Credenciales";
+            this.credencialesToolStripMenuItem.Click += new System.EventHandler(this.credencialesToolStripMenuItem_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
@@ -98,14 +116,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(900, 90);
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
-            // 
-            // generadorQRToolStripMenuItem
-            // 
-            this.generadorQRToolStripMenuItem.ForeColor = System.Drawing.Color.Navy;
-            this.generadorQRToolStripMenuItem.Name = "generadorQRToolStripMenuItem";
-            this.generadorQRToolStripMenuItem.Size = new System.Drawing.Size(93, 20);
-            this.generadorQRToolStripMenuItem.Text = "Generador QR";
-            this.generadorQRToolStripMenuItem.Click += new System.EventHandler(this.generadorQRToolStripMenuItem_Click);
             // 
             // PrincipalAdmin
             // 
@@ -135,5 +145,6 @@
         private System.Windows.Forms.ToolStripMenuItem horariosEmpleadosToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStripMenuItem generadorQRToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem credencialesToolStripMenuItem;
     }
 }

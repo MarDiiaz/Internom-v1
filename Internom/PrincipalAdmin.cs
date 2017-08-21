@@ -56,5 +56,12 @@ namespace Internom
             qr.Show();
             Close();
         }
+
+        private void credencialesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Credenciales cr = new Credenciales();
+            cr.Show();
+            Close();
+        }
     }
 }
