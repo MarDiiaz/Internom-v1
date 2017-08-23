@@ -36,6 +36,7 @@
             this.horariosEmpleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.generadorQRToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.credencialesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.permisosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -49,7 +50,8 @@
             this.catalogoEmpleadosToolStripMenuItem,
             this.horariosEmpleadosToolStripMenuItem,
             this.generadorQRToolStripMenuItem,
-            this.credencialesToolStripMenuItem});
+            this.credencialesToolStripMenuItem,
+            this.permisosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(901, 24);
@@ -104,6 +106,14 @@
             this.credencialesToolStripMenuItem.Text = "Credenciales";
             this.credencialesToolStripMenuItem.Click += new System.EventHandler(this.credencialesToolStripMenuItem_Click);
             // 
+            // permisosToolStripMenuItem
+            // 
+            this.permisosToolStripMenuItem.ForeColor = System.Drawing.Color.Navy;
+            this.permisosToolStripMenuItem.Name = "permisosToolStripMenuItem";
+            this.permisosToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
+            this.permisosToolStripMenuItem.Text = "Permisos";
+            this.permisosToolStripMenuItem.Click += new System.EventHandler(this.permisosToolStripMenuItem_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
@@ -146,5 +156,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStripMenuItem generadorQRToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem credencialesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem permisosToolStripMenuItem;
     }
 }

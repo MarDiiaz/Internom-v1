@@ -33,9 +33,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button6 = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.txtfecha1 = new System.Windows.Forms.TextBox();
-            this.txtfecha2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.visitantesBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -67,36 +65,20 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(118, 56);
+            this.dateTimePicker1.Location = new System.Drawing.Point(143, 86);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 13;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(560, 56);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker2.TabIndex = 14;
-            this.dateTimePicker2.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
-            // 
             // txtfecha1
             // 
             this.txtfecha1.Enabled = false;
-            this.txtfecha1.Location = new System.Drawing.Point(324, 56);
+            this.txtfecha1.Location = new System.Drawing.Point(349, 86);
             this.txtfecha1.Name = "txtfecha1";
             this.txtfecha1.Size = new System.Drawing.Size(100, 20);
             this.txtfecha1.TabIndex = 15;
             this.txtfecha1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // txtfecha2
-            // 
-            this.txtfecha2.Enabled = false;
-            this.txtfecha2.Location = new System.Drawing.Point(454, 56);
-            this.txtfecha2.Name = "txtfecha2";
-            this.txtfecha2.Size = new System.Drawing.Size(100, 20);
-            this.txtfecha2.TabIndex = 16;
             // 
             // label1
             // 
@@ -105,16 +87,16 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(388, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(154, 20);
+            this.label1.Size = new System.Drawing.Size(207, 20);
             this.label1.TabIndex = 17;
-            this.label1.Text = "Rango De Fechas";
+            this.label1.Text = "Consulta Visitantes Dia: ";
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Navy;
-            this.button1.Location = new System.Drawing.Point(392, 92);
+            this.button1.Location = new System.Drawing.Point(524, 86);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(102, 31);
             this.button1.TabIndex = 18;
@@ -134,9 +116,7 @@
             this.ClientSize = new System.Drawing.Size(901, 453);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtfecha2);
             this.Controls.Add(this.txtfecha1);
-            this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.dataGridView1);
@@ -155,9 +135,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.TextBox txtfecha1;
-        private System.Windows.Forms.TextBox txtfecha2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
        // private internomDataSet internomDataSet;

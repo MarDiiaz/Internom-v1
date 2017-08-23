@@ -45,17 +45,14 @@ namespace Internom
            txtfecha1.Text = dateTimePicker1.Value.ToString("yyy/MM/dd");
         }
 
-        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
-        {
-           txtfecha2.Text = dateTimePicker1.Value.ToString("yyy/MM/dd");
-        }
+       
 
         private void button1_Click(object sender, EventArgs e)
         {
             c.Open();
             string fecha = DateTime.Today.ToString();
 
-            SqlDataAdapter da = new SqlDataAdapter("select fecha, nombre,compañia,persona_visitada,departamento,hora_entrada,hora_salida from visitantes where fecha BETWEEN '" + txtfecha1.Text + "' AND '" + txtfecha2.Text + "'", c);
+            SqlDataAdapter da = new SqlDataAdapter("select fecha, nombre,compañia,persona_visitada,departamento,hora_entrada,hora_salida from visitantes where fecha =  '" + txtfecha1.Text + "' ", c); //AND '" + txtfecha2.Text + "'", c);
             DataTable dt = new DataTable();
             da.Fill(dt);
             dataGridView1.DataSource = dt;

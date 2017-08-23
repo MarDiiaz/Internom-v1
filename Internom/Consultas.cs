@@ -64,5 +64,10 @@ namespace Internom
             rva.Show();
             Close();
         }
+
+        private void Consultas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

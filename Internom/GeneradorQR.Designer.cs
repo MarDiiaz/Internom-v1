@@ -87,7 +87,7 @@
             this.qrCodeImgControl1.TabIndex = 20;
             this.qrCodeImgControl1.TabStop = false;
             this.qrCodeImgControl1.Text = "qrCodeImgControl1";
-            this.qrCodeImgControl1.Click += new System.EventHandler(this.qrCodeImgControl1_Click);
+           
             // 
             // button1
             // 

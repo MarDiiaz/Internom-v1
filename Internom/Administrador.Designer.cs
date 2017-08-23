@@ -49,7 +49,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(152, 21);
             this.comboBox1.TabIndex = 2;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            
             // 
             // contraseña
             // 
@@ -58,7 +58,7 @@
             this.contraseña.PasswordChar = '*';
             this.contraseña.Size = new System.Drawing.Size(152, 20);
             this.contraseña.TabIndex = 3;
-            this.contraseña.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+           
             // 
             // label2
             // 
@@ -70,7 +70,7 @@
             this.label2.Size = new System.Drawing.Size(67, 18);
             this.label2.TabIndex = 4;
             this.label2.Text = "Usuario";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+     
             // 
             // label3
             // 
@@ -93,7 +93,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(108, 97);
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
+          
             // 
             // button1
             // 

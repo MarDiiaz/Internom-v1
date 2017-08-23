@@ -92,7 +92,7 @@
             this.hora.AutoSize = true;
             this.hora.BackColor = System.Drawing.Color.Transparent;
             this.hora.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hora.Location = new System.Drawing.Point(551, 269);
+            this.hora.Location = new System.Drawing.Point(697, 352);
             this.hora.Name = "hora";
             this.hora.Size = new System.Drawing.Size(0, 31);
             this.hora.TabIndex = 26;

@@ -63,5 +63,12 @@ namespace Internom
             cr.Show();
             Close();
         }
+
+        private void permisosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Permisos per = new Permisos();
+            per.Show();
+            Close();
+        }
     }
 }

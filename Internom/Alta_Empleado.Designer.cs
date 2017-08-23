@@ -67,7 +67,7 @@
             this.label1.Size = new System.Drawing.Size(57, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+          
             // 
             // txtnombre
             // 
@@ -75,7 +75,7 @@
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.Size = new System.Drawing.Size(227, 20);
             this.txtnombre.TabIndex = 1;
-            this.txtnombre.TextChanged += new System.EventHandler(this.txtnombre_TextChanged);
+           
             // 
             // label2
             // 
@@ -220,7 +220,7 @@
             this.txtfechaingreso.Name = "txtfechaingreso";
             this.txtfechaingreso.Size = new System.Drawing.Size(227, 20);
             this.txtfechaingreso.TabIndex = 17;
-            this.txtfechaingreso.TextChanged += new System.EventHandler(this.txtfechaingreso_TextChanged);
+         
             // 
             // label8
             // 
@@ -256,7 +256,7 @@
             this.id_dpto.Size = new System.Drawing.Size(104, 20);
             this.id_dpto.TabIndex = 21;
             this.id_dpto.Visible = false;
-            this.id_dpto.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+          
             // 
             // label9
             // 

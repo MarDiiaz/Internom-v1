@@ -99,7 +99,7 @@ namespace Internom
                 cadcon = new SqlCommand("Insert into visitantes (fecha,nombre,compañia,persona_visitada,departamento,hora_entrada,hora_salida) values ('" + fecha + "','" + txtnombre.Text + "','" + txtcompa.Text + "','" + comboBox1.Text + "','" + textBox3.Text + "','" + hora + "','0:00')", con);
                 cadcon.ExecuteNonQuery();
 
-                MessageBox.Show(message, "BIENVENIDO");
+                MessageBox.Show( "BIENVENIDO", message);
 
 
                 txtnombre.Text = "";

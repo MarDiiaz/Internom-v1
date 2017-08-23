@@ -36,5 +36,10 @@ namespace Internom
             Administrador m = new Administrador();
             m.Show();
         }
+
+        private void INTERNOM_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

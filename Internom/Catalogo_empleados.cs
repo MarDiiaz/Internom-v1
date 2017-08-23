@@ -35,12 +35,7 @@ namespace Internom
           
             c.Close();
         }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
-        }            
-
+        
         private void Catalogo_empleados_Load(object sender, EventArgs e)
         {
             consulta();
@@ -96,9 +91,6 @@ namespace Internom
             consulta_nombre();
         }
 
-        private void nombre_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

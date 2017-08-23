@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Media;
 
 namespace Internom
 {
@@ -18,10 +19,7 @@ namespace Internom
             InitializeComponent();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -180,15 +178,15 @@ namespace Internom
 
         private void Credenciales_Load(object sender, EventArgs e)
         {
-
+            textBox4.Focus();
         }
 
-     
+        private void button6_Click(object sender, EventArgs e)
+        {
 
-       
-
-     
-
-      
+            PrincipalAdmin pa = new PrincipalAdmin();
+            pa.Show();
+            Close();
+        }
     }
 }

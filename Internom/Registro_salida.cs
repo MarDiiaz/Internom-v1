@@ -76,7 +76,7 @@ namespace Internom
                 cadcon = new SqlCommand("update visitantes set hora_salida = '"+hora+"' where id_visitante= '"+txtid.Text+"'", con);
                 cadcon.ExecuteNonQuery();
 
-                MessageBox.Show(message, "Hasta Pronto");
+                MessageBox.Show( "Hasta Pronto", message);
                 txtid.Text = "";
                 Close();
 

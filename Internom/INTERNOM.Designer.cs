@@ -133,6 +133,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "INTERNOM";
             this.Text = "INTERNOM";
+            this.Load += new System.EventHandler(this.INTERNOM_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

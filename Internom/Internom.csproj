@@ -64,10 +64,6 @@
     <Reference Include="BarcodeLib, Version=1.0.0.23, Culture=neutral, PublicKeyToken=5f09bda868cc39e7, processorArchitecture=MSIL">
       <HintPath>..\packages\BarcodeLib.1.0.0.23\lib\net20\BarcodeLib.dll</HintPath>
     </Reference>
-    <Reference Include="BarcodeLib.BarcodeReader, Version=4.3.1.0, Culture=neutral, PublicKeyToken=00f9b35554156684, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Downloads\BarcodeLib_NETBarcodeReader_Trial\BarcodeLib_NETBarcodeReader_Trial\BarcodeLib.BarcodeReader.dll</HintPath>
-    </Reference>
     <Reference Include="Gma.QrCodeNet.Encoding">
       <HintPath>..\..\..\..\Downloads\QrCode.Net 0.4 Pre-Release\QrCode.Net 0.4 Pre-Release\Gma.QrCodeNet.Encoder\Gma.QrCodeNet.Encoding.dll</HintPath>
     </Reference>
@@ -97,9 +93,6 @@
     </Reference>
     <Reference Include="Xamarin.Forms.Xaml, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Xamarin.Forms.2.3.4.224\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.Xaml.dll</HintPath>
-    </Reference>
-    <Reference Include="zxing.portable">
-      <HintPath>..\..\..\..\Downloads\ZXing.Net.0.15.0.0\portable\zxing.portable.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -145,6 +138,12 @@
     </Compile>
     <Compile Include="INTERNOM.Designer.cs">
       <DependentUpon>INTERNOM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Permisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Permisos.Designer.cs">
+      <DependentUpon>Permisos.cs</DependentUpon>
     </Compile>
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
@@ -231,6 +230,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="INTERNOM.resx">
       <DependentUpon>INTERNOM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Permisos.resx">
+      <DependentUpon>Permisos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>

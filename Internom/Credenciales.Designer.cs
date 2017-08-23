@@ -54,6 +54,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
             this.label2 = new System.Windows.Forms.Label();
+            this.button6 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.foto)).BeginInit();
@@ -318,12 +319,26 @@
             this.label2.TabIndex = 20;
             this.label2.Text = "INGRESA No. Nomina del Empleado";
             // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.RoyalBlue;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Location = new System.Drawing.Point(1, 429);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(74, 22);
+            this.button6.TabIndex = 21;
+            this.button6.Text = "Regresar";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // Credenciales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(901, 453);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button3);
@@ -379,5 +394,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button6;
     }
 }

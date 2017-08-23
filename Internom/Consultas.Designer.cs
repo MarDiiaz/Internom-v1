@@ -69,7 +69,7 @@
             // 
             this.button4.BackColor = System.Drawing.Color.White;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(231, 229);
+            this.button4.Location = new System.Drawing.Point(231, 278);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(157, 23);
             this.button4.TabIndex = 4;
@@ -116,7 +116,7 @@
             // 
             this.button7.BackColor = System.Drawing.Color.White;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(362, 338);
+            this.button7.Location = new System.Drawing.Point(231, 229);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(157, 23);
             this.button7.TabIndex = 11;
@@ -153,6 +153,7 @@
             this.Controls.Add(this.button1);
             this.Name = "Consultas";
             this.Text = "Consultas";
+            this.Load += new System.EventHandler(this.Consultas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

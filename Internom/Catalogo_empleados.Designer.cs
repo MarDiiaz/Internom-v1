@@ -50,7 +50,7 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(755, 178);
             this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+           
             // 
             // button6
             // 
@@ -104,7 +104,7 @@
             this.nombre.Name = "nombre";
             this.nombre.Size = new System.Drawing.Size(284, 20);
             this.nombre.TabIndex = 15;
-            this.nombre.TextChanged += new System.EventHandler(this.nombre_TextChanged);
+          
             // 
             // pictureBox1
             // 

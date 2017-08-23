@@ -25,28 +25,7 @@ namespace Internom
             conexion c = new conexion();
             c.catalogous(comboBox1);
         }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-
-        }
-
+        
         //evento al dar click en login
 
         private void button1_Click(object sender, EventArgs e)

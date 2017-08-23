@@ -30,10 +30,7 @@ namespace Internom
             //c.llenarcombo(TextBox1);        
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void button6_Click(object sender, EventArgs e)
         {
@@ -72,11 +69,7 @@ namespace Internom
             }
         }
 
-        private void txtfechaingreso_TextChanged(object sender, EventArgs e)
-        {
-            
-            
-        }
+       
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
@@ -100,12 +93,7 @@ namespace Internom
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-          
-        }
-
+      
         private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
         {
             txtnac.Text = dateTimePicker2.Value.ToString("dd/MM/yyyy");
@@ -134,9 +122,6 @@ namespace Internom
 
         }
 
-        private void txtnombre_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

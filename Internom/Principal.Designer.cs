@@ -71,7 +71,7 @@
             this.menuStrip1.Size = new System.Drawing.Size(901, 28);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
-            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
+           
             // 
             // rutasToolStripMenuItem
             // 
@@ -94,8 +94,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(900, 90);
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
+           
             // foto
             // 
             this.foto.BackColor = System.Drawing.Color.Transparent;
@@ -106,8 +105,6 @@
             this.foto.Size = new System.Drawing.Size(115, 107);
             this.foto.TabIndex = 7;
             this.foto.TabStop = false;
-            this.foto.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.InactiveCaption;
@@ -154,7 +151,7 @@
             this.label1.Size = new System.Drawing.Size(79, 16);
             this.label1.TabIndex = 12;
             this.label1.Text = "No. Nómina";
-            this.label1.Click += new System.EventHandler(this.label1_Click_2);
+          
             // 
             // label3
             // 
@@ -234,7 +231,7 @@
             this.fechahoy.Size = new System.Drawing.Size(28, 20);
             this.fechahoy.TabIndex = 22;
             this.fechahoy.Visible = false;
-            this.fechahoy.TextChanged += new System.EventHandler(this.fechahoy_TextChanged);
+          
             // 
             // label5
             // 
@@ -271,7 +268,7 @@
             this.label2.Size = new System.Drawing.Size(57, 16);
             this.label2.TabIndex = 3;
             this.label2.Text = "Nombre";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+          
             // 
             // button3
             // 
@@ -326,7 +323,7 @@
             this.monthCalendar1.Location = new System.Drawing.Point(671, 154);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 6;
-            this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
+       
             // 
             // Principal
             // 
