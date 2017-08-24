@@ -31,16 +31,11 @@ namespace Internom
 
         private void altaEmpleadoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Alta_Empleado ae = new Alta_Empleado();
-            ae.Show();
-            Close();
         }
 
         private void catalogoEmpleadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Catalogo_empleados cq = new Catalogo_empleados();
-            cq.Show();
-            Close();
+           
         }
 
         private void horariosEmpleadosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -52,16 +47,11 @@ namespace Internom
 
         private void generadorQRToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            GeneradorQR qr = new GeneradorQR();
-            qr.Show();
-            Close();
         }
 
         private void credencialesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Credenciales cr = new Credenciales();
-            cr.Show();
-            Close();
+           
         }
 
         private void permisosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -69,6 +59,74 @@ namespace Internom
             Permisos per = new Permisos();
             per.Show();
             Close();
+        }
+
+        private void vehiculosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void generadorQrToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+           
+        }
+
+        private void registroEmpleadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            Alta_Empleado ae = new Alta_Empleado();
+            ae.Show();
+            Close();
+        }
+
+        private void catalogoEmpleadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Catalogo_empleados cq = new Catalogo_empleados();
+            cq.Show();
+            Close();
+        }
+
+        private void credencialesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nuevaCredencialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Credenciales cr = new Credenciales();
+            cr.Show();
+            Close();
+        }
+
+        private void generadorCodigosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GeneradorQR qr = new GeneradorQR();
+            qr.Show();
+            Close();
+        }
+
+        private void registroVehiculoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Vehiculos v = new Vehiculos();
+            v.Show();
+            Close();
+        }
+
+        private void catalogoVehiculosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void formatoInvUnidadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -31,13 +31,18 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PrincipalAdmin));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.altaEmpleadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.catalogoEmpleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.horariosEmpleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.generadorQRToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.credencialesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.permisosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.empleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registroEmpleadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.catalogoEmpleadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.credencialesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.nuevaCredencialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.generadorCodigosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.flotillaVehicularToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registroVehiculoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.formatoInvUnidadToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -46,17 +51,17 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.consultasToolStripMenuItem,
-            this.altaEmpleadoToolStripMenuItem,
-            this.catalogoEmpleadosToolStripMenuItem,
+            this.empleadosToolStripMenuItem,
             this.horariosEmpleadosToolStripMenuItem,
-            this.generadorQRToolStripMenuItem,
-            this.credencialesToolStripMenuItem,
-            this.permisosToolStripMenuItem});
+            this.permisosToolStripMenuItem,
+            this.credencialesToolStripMenuItem1,
+            this.flotillaVehicularToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(901, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // consultasToolStripMenuItem
             // 
@@ -66,22 +71,6 @@
             this.consultasToolStripMenuItem.Text = "Consultas";
             this.consultasToolStripMenuItem.Click += new System.EventHandler(this.consultasToolStripMenuItem_Click);
             // 
-            // altaEmpleadoToolStripMenuItem
-            // 
-            this.altaEmpleadoToolStripMenuItem.ForeColor = System.Drawing.Color.Navy;
-            this.altaEmpleadoToolStripMenuItem.Name = "altaEmpleadoToolStripMenuItem";
-            this.altaEmpleadoToolStripMenuItem.Size = new System.Drawing.Size(96, 20);
-            this.altaEmpleadoToolStripMenuItem.Text = "Alta Empleado";
-            this.altaEmpleadoToolStripMenuItem.Click += new System.EventHandler(this.altaEmpleadoToolStripMenuItem_Click);
-            // 
-            // catalogoEmpleadosToolStripMenuItem
-            // 
-            this.catalogoEmpleadosToolStripMenuItem.ForeColor = System.Drawing.Color.Navy;
-            this.catalogoEmpleadosToolStripMenuItem.Name = "catalogoEmpleadosToolStripMenuItem";
-            this.catalogoEmpleadosToolStripMenuItem.Size = new System.Drawing.Size(128, 20);
-            this.catalogoEmpleadosToolStripMenuItem.Text = "Catalogo Empleados";
-            this.catalogoEmpleadosToolStripMenuItem.Click += new System.EventHandler(this.catalogoEmpleadosToolStripMenuItem_Click);
-            // 
             // horariosEmpleadosToolStripMenuItem
             // 
             this.horariosEmpleadosToolStripMenuItem.ForeColor = System.Drawing.Color.Navy;
@@ -89,22 +78,6 @@
             this.horariosEmpleadosToolStripMenuItem.Size = new System.Drawing.Size(127, 20);
             this.horariosEmpleadosToolStripMenuItem.Text = "Horarios_Empleados";
             this.horariosEmpleadosToolStripMenuItem.Click += new System.EventHandler(this.horariosEmpleadosToolStripMenuItem_Click);
-            // 
-            // generadorQRToolStripMenuItem
-            // 
-            this.generadorQRToolStripMenuItem.ForeColor = System.Drawing.Color.Navy;
-            this.generadorQRToolStripMenuItem.Name = "generadorQRToolStripMenuItem";
-            this.generadorQRToolStripMenuItem.Size = new System.Drawing.Size(93, 20);
-            this.generadorQRToolStripMenuItem.Text = "Generador QR";
-            this.generadorQRToolStripMenuItem.Click += new System.EventHandler(this.generadorQRToolStripMenuItem_Click);
-            // 
-            // credencialesToolStripMenuItem
-            // 
-            this.credencialesToolStripMenuItem.ForeColor = System.Drawing.Color.Navy;
-            this.credencialesToolStripMenuItem.Name = "credencialesToolStripMenuItem";
-            this.credencialesToolStripMenuItem.Size = new System.Drawing.Size(86, 20);
-            this.credencialesToolStripMenuItem.Text = "Credenciales";
-            this.credencialesToolStripMenuItem.Click += new System.EventHandler(this.credencialesToolStripMenuItem_Click);
             // 
             // permisosToolStripMenuItem
             // 
@@ -126,6 +99,84 @@
             this.pictureBox1.Size = new System.Drawing.Size(900, 90);
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
+            // 
+            // empleadosToolStripMenuItem
+            // 
+            this.empleadosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.registroEmpleadoToolStripMenuItem,
+            this.catalogoEmpleadoToolStripMenuItem});
+            this.empleadosToolStripMenuItem.ForeColor = System.Drawing.Color.Navy;
+            this.empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
+            this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
+            this.empleadosToolStripMenuItem.Text = "Empleados";
+            // 
+            // registroEmpleadoToolStripMenuItem
+            // 
+            this.registroEmpleadoToolStripMenuItem.ForeColor = System.Drawing.Color.Navy;
+            this.registroEmpleadoToolStripMenuItem.Name = "registroEmpleadoToolStripMenuItem";
+            this.registroEmpleadoToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.registroEmpleadoToolStripMenuItem.Text = "Registro Empleado";
+            this.registroEmpleadoToolStripMenuItem.Click += new System.EventHandler(this.registroEmpleadoToolStripMenuItem_Click);
+            // 
+            // catalogoEmpleadoToolStripMenuItem
+            // 
+            this.catalogoEmpleadoToolStripMenuItem.ForeColor = System.Drawing.Color.Navy;
+            this.catalogoEmpleadoToolStripMenuItem.Name = "catalogoEmpleadoToolStripMenuItem";
+            this.catalogoEmpleadoToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.catalogoEmpleadoToolStripMenuItem.Text = "Catalogo Empleados";
+            this.catalogoEmpleadoToolStripMenuItem.Click += new System.EventHandler(this.catalogoEmpleadoToolStripMenuItem_Click);
+            // 
+            // credencialesToolStripMenuItem1
+            // 
+            this.credencialesToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.nuevaCredencialToolStripMenuItem,
+            this.generadorCodigosToolStripMenuItem});
+            this.credencialesToolStripMenuItem1.ForeColor = System.Drawing.Color.Navy;
+            this.credencialesToolStripMenuItem1.Name = "credencialesToolStripMenuItem1";
+            this.credencialesToolStripMenuItem1.Size = new System.Drawing.Size(86, 20);
+            this.credencialesToolStripMenuItem1.Text = "Credenciales";
+            this.credencialesToolStripMenuItem1.Click += new System.EventHandler(this.credencialesToolStripMenuItem1_Click);
+            // 
+            // nuevaCredencialToolStripMenuItem
+            // 
+            this.nuevaCredencialToolStripMenuItem.ForeColor = System.Drawing.Color.Navy;
+            this.nuevaCredencialToolStripMenuItem.Name = "nuevaCredencialToolStripMenuItem";
+            this.nuevaCredencialToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.nuevaCredencialToolStripMenuItem.Text = "Nueva Credencial";
+            this.nuevaCredencialToolStripMenuItem.Click += new System.EventHandler(this.nuevaCredencialToolStripMenuItem_Click);
+            // 
+            // generadorCodigosToolStripMenuItem
+            // 
+            this.generadorCodigosToolStripMenuItem.ForeColor = System.Drawing.Color.Navy;
+            this.generadorCodigosToolStripMenuItem.Name = "generadorCodigosToolStripMenuItem";
+            this.generadorCodigosToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.generadorCodigosToolStripMenuItem.Text = "Generador Codigos";
+            this.generadorCodigosToolStripMenuItem.Click += new System.EventHandler(this.generadorCodigosToolStripMenuItem_Click);
+            // 
+            // flotillaVehicularToolStripMenuItem
+            // 
+            this.flotillaVehicularToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.registroVehiculoToolStripMenuItem,
+            this.formatoInvUnidadToolStripMenuItem1});
+            this.flotillaVehicularToolStripMenuItem.ForeColor = System.Drawing.Color.Navy;
+            this.flotillaVehicularToolStripMenuItem.Name = "flotillaVehicularToolStripMenuItem";
+            this.flotillaVehicularToolStripMenuItem.Size = new System.Drawing.Size(105, 20);
+            this.flotillaVehicularToolStripMenuItem.Text = "Flotilla Vehicular";
+            // 
+            // registroVehiculoToolStripMenuItem
+            // 
+            this.registroVehiculoToolStripMenuItem.ForeColor = System.Drawing.Color.Navy;
+            this.registroVehiculoToolStripMenuItem.Name = "registroVehiculoToolStripMenuItem";
+            this.registroVehiculoToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.registroVehiculoToolStripMenuItem.Text = "Registro Vehiculo";
+            this.registroVehiculoToolStripMenuItem.Click += new System.EventHandler(this.registroVehiculoToolStripMenuItem_Click);
+            // 
+            // formatoInvUnidadToolStripMenuItem1
+            // 
+            this.formatoInvUnidadToolStripMenuItem1.ForeColor = System.Drawing.Color.Navy;
+            this.formatoInvUnidadToolStripMenuItem1.Name = "formatoInvUnidadToolStripMenuItem1";
+            this.formatoInvUnidadToolStripMenuItem1.Size = new System.Drawing.Size(182, 22);
+            this.formatoInvUnidadToolStripMenuItem1.Text = "Formato Inv. Unidad";
             // 
             // PrincipalAdmin
             // 
@@ -150,12 +201,17 @@
         #endregion
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem altaEmpleadoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem catalogoEmpleadosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem horariosEmpleadosToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ToolStripMenuItem generadorQRToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem credencialesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem permisosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem empleadosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem registroEmpleadoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem catalogoEmpleadoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem credencialesToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem nuevaCredencialToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem generadorCodigosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem flotillaVehicularToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem registroVehiculoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem formatoInvUnidadToolStripMenuItem1;
     }
 }
