@@ -38,6 +38,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.formatoInvUnidadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -57,7 +58,7 @@
             // 
             // monthCalendar1
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(647, 177);
+            this.monthCalendar1.Location = new System.Drawing.Point(645, 173);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 7;
             // 
@@ -103,7 +104,8 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1});
+            this.toolStripMenuItem1,
+            this.formatoInvUnidadToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(901, 28);
@@ -118,6 +120,15 @@
             this.toolStripMenuItem1.Size = new System.Drawing.Size(119, 24);
             this.toolStripMenuItem1.Text = "Administrador";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            // 
+            // formatoInvUnidadToolStripMenuItem
+            // 
+            this.formatoInvUnidadToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.formatoInvUnidadToolStripMenuItem.ForeColor = System.Drawing.Color.Navy;
+            this.formatoInvUnidadToolStripMenuItem.Name = "formatoInvUnidadToolStripMenuItem";
+            this.formatoInvUnidadToolStripMenuItem.Size = new System.Drawing.Size(148, 24);
+            this.formatoInvUnidadToolStripMenuItem.Text = "Formato Salida Vehiculo";
+            this.formatoInvUnidadToolStripMenuItem.Click += new System.EventHandler(this.formatoInvUnidadToolStripMenuItem_Click);
             // 
             // INTERNOM
             // 
@@ -152,5 +163,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem formatoInvUnidadToolStripMenuItem;
     }
 }

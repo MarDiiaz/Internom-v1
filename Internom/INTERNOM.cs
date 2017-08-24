@@ -41,5 +41,11 @@ namespace Internom
         {
 
         }
+
+        private void formatoInvUnidadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Formato_Unidad fu = new Formato_Unidad();
+            fu.Show();
+        }
     }
 }

@@ -235,22 +235,6 @@
         9PDkFD4JPiZxtHN5AEJ9Sgyf8IQnPGGxgND/A5h+Cgmib/AbAAAAAElFTkSuQmCC
 </value>
   </data>
-  <metadata name="pageSetupDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="printDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>169, 17</value>
-  </metadata>
-  <data name="btn_imprimir.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACsAAAAsCAIAAABzOtYvAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAANJJREFUWEftjkEOhSAQQ70Cd/l35ph8ZLrQIKSNGJ1k3qZiyqNbeZtYEAt2tAWb
-        CK5N8bkAhylCE8khePkmkkPw8k0kh+Dlm0gOwcs3kRyCl28iOQQv30RyCF6+ieQQvHwTySF4+SbyTM45
-        pWSWtVRtleOZxvWCh543qhzPNK4XWBWHpfRmDwt+Dfu+z9FseFiwlt7sbYH958G1A/1/nwtwmDJq9v9j
-        wdcXjEBpCqoDUGp8dcGI/v4IoYnkELx8E8lhXh5cm+JtwRPEgliwEwtK+QP5s229ovMrjgAAAABJRU5E
-        rkJggg==
-</value>
-  </data>
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEAYABgAAD/4QC8RXhpZgAATU0AKgAAAAgAAwE7AAIAAAALAAAAModpAAQAAAAB

@@ -56,9 +56,7 @@ namespace Internom
 
         private void permisosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Permisos per = new Permisos();
-            per.Show();
-            Close();
+            
         }
 
         private void vehiculosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -125,6 +123,11 @@ namespace Internom
         }
 
         private void formatoInvUnidadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void formatoInvUnidadToolStripMenuItem1_Click(object sender, EventArgs e)
         {
 
         }

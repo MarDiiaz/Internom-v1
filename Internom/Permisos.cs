@@ -75,5 +75,10 @@ namespace Internom
         {
            
         }
+
+        private void btn_imprimir_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -57,6 +57,7 @@
             this.timerqr = new System.Windows.Forms.Timer(this.components);
             this.videoSourcePlayer1 = new AForge.Controls.VideoSourcePlayer();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.permisosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.foto)).BeginInit();
@@ -65,13 +66,13 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.rutasToolStripMenuItem});
+            this.rutasToolStripMenuItem,
+            this.permisosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(901, 28);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
-           
             // 
             // rutasToolStripMenuItem
             // 
@@ -94,7 +95,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(900, 90);
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
-           
+            // 
             // foto
             // 
             this.foto.BackColor = System.Drawing.Color.Transparent;
@@ -105,6 +106,7 @@
             this.foto.Size = new System.Drawing.Size(115, 107);
             this.foto.TabIndex = 7;
             this.foto.TabStop = false;
+            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.InactiveCaption;
@@ -151,7 +153,6 @@
             this.label1.Size = new System.Drawing.Size(79, 16);
             this.label1.TabIndex = 12;
             this.label1.Text = "No. Nómina";
-          
             // 
             // label3
             // 
@@ -231,7 +232,6 @@
             this.fechahoy.Size = new System.Drawing.Size(28, 20);
             this.fechahoy.TabIndex = 22;
             this.fechahoy.Visible = false;
-          
             // 
             // label5
             // 
@@ -268,7 +268,6 @@
             this.label2.Size = new System.Drawing.Size(57, 16);
             this.label2.TabIndex = 3;
             this.label2.Text = "Nombre";
-          
             // 
             // button3
             // 
@@ -323,7 +322,15 @@
             this.monthCalendar1.Location = new System.Drawing.Point(671, 154);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 6;
-       
+            // 
+            // permisosToolStripMenuItem
+            // 
+            this.permisosToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.permisosToolStripMenuItem.ForeColor = System.Drawing.Color.Navy;
+            this.permisosToolStripMenuItem.Name = "permisosToolStripMenuItem";
+            this.permisosToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
+            this.permisosToolStripMenuItem.Text = "Permisos";
+            this.permisosToolStripMenuItem.Click += new System.EventHandler(this.permisosToolStripMenuItem_Click);
             // 
             // Principal
             // 
@@ -397,6 +404,7 @@
         private AForge.Controls.VideoSourcePlayer videoSourcePlayer1;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.TextBox no;
+        private System.Windows.Forms.ToolStripMenuItem permisosToolStripMenuItem;
     }
 }
 

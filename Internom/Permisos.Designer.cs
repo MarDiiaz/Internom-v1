@@ -73,7 +73,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_imprimir = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -554,15 +554,16 @@
             // 
             this.printDialog1.UseEXDialog = true;
             // 
-            // button1
+            // btn_imprimir
             // 
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(725, 50);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(56, 36);
-            this.button1.TabIndex = 44;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_imprimir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_imprimir.BackgroundImage")));
+            this.btn_imprimir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_imprimir.Location = new System.Drawing.Point(725, 50);
+            this.btn_imprimir.Name = "btn_imprimir";
+            this.btn_imprimir.Size = new System.Drawing.Size(56, 36);
+            this.btn_imprimir.TabIndex = 44;
+            this.btn_imprimir.UseVisualStyleBackColor = true;
+            this.btn_imprimir.Click += new System.EventHandler(this.btn_imprimir_Click);
             // 
             // label9
             // 
@@ -582,7 +583,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(817, 453);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_imprimir);
             this.Controls.Add(this.panel1);
             this.Name = "Permisos";
             this.Text = "Permisos";
@@ -641,7 +642,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PageSetupDialog pageSetupDialog1;
         private System.Windows.Forms.PrintDialog printDialog1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_imprimir;
         private System.Windows.Forms.Label label9;
     }
 }
