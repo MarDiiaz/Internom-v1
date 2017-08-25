@@ -133,6 +133,12 @@
     <Compile Include="Formato_Unidad.Designer.cs">
       <DependentUpon>Formato_Unidad.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formato_Unidad_Retorno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formato_Unidad_Retorno.Designer.cs">
+      <DependentUpon>Formato_Unidad_Retorno.cs</DependentUpon>
+    </Compile>
     <Compile Include="GeneradorQR.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -239,6 +245,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formato_Unidad.resx">
       <DependentUpon>Formato_Unidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formato_Unidad_Retorno.resx">
+      <DependentUpon>Formato_Unidad_Retorno.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GeneradorQR.resx">
       <DependentUpon>GeneradorQR.cs</DependentUpon>

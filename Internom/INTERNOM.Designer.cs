@@ -39,6 +39,8 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.formatoInvUnidadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salidaUnidadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.retornoUnidadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -123,12 +125,33 @@
             // 
             // formatoInvUnidadToolStripMenuItem
             // 
-            this.formatoInvUnidadToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.formatoInvUnidadToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.salidaUnidadToolStripMenuItem,
+            this.retornoUnidadToolStripMenuItem});
+            this.formatoInvUnidadToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.formatoInvUnidadToolStripMenuItem.ForeColor = System.Drawing.Color.Navy;
             this.formatoInvUnidadToolStripMenuItem.Name = "formatoInvUnidadToolStripMenuItem";
-            this.formatoInvUnidadToolStripMenuItem.Size = new System.Drawing.Size(148, 24);
-            this.formatoInvUnidadToolStripMenuItem.Text = "Formato Salida Vehiculo";
+            this.formatoInvUnidadToolStripMenuItem.Size = new System.Drawing.Size(143, 24);
+            this.formatoInvUnidadToolStripMenuItem.Text = "Formatos Vehiculos";
             this.formatoInvUnidadToolStripMenuItem.Click += new System.EventHandler(this.formatoInvUnidadToolStripMenuItem_Click);
+            // 
+            // salidaUnidadToolStripMenuItem
+            // 
+            this.salidaUnidadToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.salidaUnidadToolStripMenuItem.ForeColor = System.Drawing.Color.Navy;
+            this.salidaUnidadToolStripMenuItem.Name = "salidaUnidadToolStripMenuItem";
+            this.salidaUnidadToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.salidaUnidadToolStripMenuItem.Text = "Salida Unidad";
+            this.salidaUnidadToolStripMenuItem.Click += new System.EventHandler(this.salidaUnidadToolStripMenuItem_Click);
+            // 
+            // retornoUnidadToolStripMenuItem
+            // 
+            this.retornoUnidadToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.retornoUnidadToolStripMenuItem.ForeColor = System.Drawing.Color.Navy;
+            this.retornoUnidadToolStripMenuItem.Name = "retornoUnidadToolStripMenuItem";
+            this.retornoUnidadToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.retornoUnidadToolStripMenuItem.Text = "Retorno Unidad";
+            this.retornoUnidadToolStripMenuItem.Click += new System.EventHandler(this.retornoUnidadToolStripMenuItem_Click);
             // 
             // INTERNOM
             // 
@@ -164,5 +187,7 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem formatoInvUnidadToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salidaUnidadToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem retornoUnidadToolStripMenuItem;
     }
 }

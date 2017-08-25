@@ -122,6 +122,9 @@ namespace Internom
 
         }
 
-       
+        private void txtnac_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

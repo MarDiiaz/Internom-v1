@@ -44,8 +44,19 @@ namespace Internom
 
         private void formatoInvUnidadToolStripMenuItem_Click(object sender, EventArgs e)
         {
+           
+        }
+
+        private void salidaUnidadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
             Formato_Unidad fu = new Formato_Unidad();
             fu.Show();
+        }
+
+        private void retornoUnidadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Formato_Unidad_Retorno fur = new Formato_Unidad_Retorno();
+            fur.Show();
         }
     }
 }

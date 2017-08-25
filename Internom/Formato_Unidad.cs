@@ -24,7 +24,18 @@ namespace Internom
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
-            textBox44.TextAlign = HorizontalAlignment.Center;
+           
+        }
+
+        private void textBox34_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Formato_Unidad_Load(object sender, EventArgs e)
+        {
+            conexion c = new conexion();
+            c.catalogorutas(comboruta);
         }
     }
 }

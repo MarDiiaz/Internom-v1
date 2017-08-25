@@ -1,6 +1,6 @@
 ﻿namespace Internom
 {
-    partial class Formato_Unidad
+    partial class Formato_Unidad_Retorno
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Formato_Unidad));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Formato_Unidad_Retorno));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.comboeco = new System.Windows.Forms.ComboBox();
+            this.comboruta = new System.Windows.Forms.ComboBox();
+            this.fecha_llegada = new System.Windows.Forms.DateTimePicker();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.fecha_salida = new System.Windows.Forms.DateTimePicker();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.textBox22 = new System.Windows.Forms.TextBox();
             this.textBox23 = new System.Windows.Forms.TextBox();
@@ -48,23 +62,9 @@
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.fecha_salida = new System.Windows.Forms.DateTimePicker();
-            this.fecha_llegada = new System.Windows.Forms.DateTimePicker();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.comboruta = new System.Windows.Forms.ComboBox();
-            this.comboeco = new System.Windows.Forms.ComboBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -103,18 +103,171 @@
             this.panel1.Controls.Add(this.textBox12);
             this.panel1.Controls.Add(this.textBox11);
             this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(877, 429);
-            this.panel1.TabIndex = 9;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.panel1.TabIndex = 10;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Navy;
+            this.button1.Location = new System.Drawing.Point(375, 369);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(108, 23);
+            this.button1.TabIndex = 83;
+            this.button1.Text = "Registrar";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // textBox7
+            // 
+            this.textBox7.BackColor = System.Drawing.Color.White;
+            this.textBox7.Enabled = false;
+            this.textBox7.Location = new System.Drawing.Point(747, 287);
+            this.textBox7.Multiline = true;
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(119, 21);
+            this.textBox7.TabIndex = 82;
+            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox8
+            // 
+            this.textBox8.BackColor = System.Drawing.Color.LightGray;
+            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox8.Location = new System.Drawing.Point(662, 287);
+            this.textBox8.Multiline = true;
+            this.textBox8.Name = "textBox8";
+            this.textBox8.ReadOnly = true;
+            this.textBox8.Size = new System.Drawing.Size(85, 21);
+            this.textBox8.TabIndex = 81;
+            this.textBox8.Text = "Combustible R:";
+            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox9
+            // 
+            this.textBox9.BackColor = System.Drawing.Color.White;
+            this.textBox9.Enabled = false;
+            this.textBox9.Location = new System.Drawing.Point(540, 287);
+            this.textBox9.Multiline = true;
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(123, 21);
+            this.textBox9.TabIndex = 80;
+            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox10
+            // 
+            this.textBox10.BackColor = System.Drawing.Color.LightGray;
+            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox10.Location = new System.Drawing.Point(460, 287);
+            this.textBox10.Multiline = true;
+            this.textBox10.Name = "textBox10";
+            this.textBox10.ReadOnly = true;
+            this.textBox10.Size = new System.Drawing.Size(80, 21);
+            this.textBox10.TabIndex = 79;
+            this.textBox10.Text = "Km. Retorno:";
+            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // comboeco
+            // 
+            this.comboeco.FormattingEnabled = true;
+            this.comboeco.Location = new System.Drawing.Point(80, 245);
+            this.comboeco.Name = "comboeco";
+            this.comboeco.Size = new System.Drawing.Size(71, 21);
+            this.comboeco.TabIndex = 78;
+            // 
+            // comboruta
+            // 
+            this.comboruta.FormattingEnabled = true;
+            this.comboruta.Location = new System.Drawing.Point(80, 211);
+            this.comboruta.Name = "comboruta";
+            this.comboruta.Size = new System.Drawing.Size(221, 21);
+            this.comboruta.TabIndex = 77;
+            // 
+            // fecha_llegada
+            // 
+            this.fecha_llegada.Location = new System.Drawing.Point(460, 172);
+            this.fecha_llegada.Name = "fecha_llegada";
+            this.fecha_llegada.Size = new System.Drawing.Size(151, 20);
+            this.fecha_llegada.TabIndex = 76;
+            // 
+            // textBox4
+            // 
+            this.textBox4.BackColor = System.Drawing.Color.White;
+            this.textBox4.Enabled = false;
+            this.textBox4.Location = new System.Drawing.Point(768, 164);
+            this.textBox4.Multiline = true;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.ReadOnly = true;
+            this.textBox4.Size = new System.Drawing.Size(97, 28);
+            this.textBox4.TabIndex = 75;
+            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox5
+            // 
+            this.textBox5.BackColor = System.Drawing.Color.LightGray;
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.Location = new System.Drawing.Point(718, 164);
+            this.textBox5.Multiline = true;
+            this.textBox5.Name = "textBox5";
+            this.textBox5.ReadOnly = true;
+            this.textBox5.Size = new System.Drawing.Size(50, 28);
+            this.textBox5.TabIndex = 74;
+            this.textBox5.Text = "Hora:";
+            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox6
+            // 
+            this.textBox6.BackColor = System.Drawing.Color.White;
+            this.textBox6.Enabled = false;
+            this.textBox6.Location = new System.Drawing.Point(614, 164);
+            this.textBox6.Multiline = true;
+            this.textBox6.Name = "textBox6";
+            this.textBox6.ReadOnly = true;
+            this.textBox6.Size = new System.Drawing.Size(105, 28);
+            this.textBox6.TabIndex = 73;
+            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // fecha_salida
+            // 
+            this.fecha_salida.Location = new System.Drawing.Point(0, 170);
+            this.fecha_salida.Name = "fecha_salida";
+            this.fecha_salida.Size = new System.Drawing.Size(151, 20);
+            this.fecha_salida.TabIndex = 72;
+            // 
+            // textBox3
+            // 
+            this.textBox3.BackColor = System.Drawing.Color.LightGray;
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(460, 136);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
+            this.textBox3.Size = new System.Drawing.Size(406, 28);
+            this.textBox3.TabIndex = 71;
+            this.textBox3.Text = "Llegada";
+            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.LightGray;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(3, 136);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(403, 28);
+            this.textBox2.TabIndex = 70;
+            this.textBox2.Text = "Salida";
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox13
             // 
             this.textBox13.Location = new System.Drawing.Point(309, 162);
             this.textBox13.Multiline = true;
             this.textBox13.Name = "textBox13";
+            this.textBox13.ReadOnly = true;
             this.textBox13.Size = new System.Drawing.Size(97, 28);
             this.textBox13.TabIndex = 69;
             this.textBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -145,9 +298,11 @@
             // 
             // textBox40
             // 
+            this.textBox40.BackColor = System.Drawing.Color.White;
             this.textBox40.Location = new System.Drawing.Point(287, 287);
             this.textBox40.Multiline = true;
             this.textBox40.Name = "textBox40";
+            this.textBox40.ReadOnly = true;
             this.textBox40.Size = new System.Drawing.Size(119, 21);
             this.textBox40.TabIndex = 58;
             this.textBox40.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -175,7 +330,6 @@
             this.textBox34.Size = new System.Drawing.Size(147, 21);
             this.textBox34.TabIndex = 53;
             this.textBox34.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox34.TextChanged += new System.EventHandler(this.textBox34_TextChanged);
             // 
             // textBox35
             // 
@@ -249,9 +403,11 @@
             // 
             // textBox21
             // 
+            this.textBox21.BackColor = System.Drawing.Color.White;
             this.textBox21.Location = new System.Drawing.Point(80, 287);
             this.textBox21.Multiline = true;
             this.textBox21.Name = "textBox21";
+            this.textBox21.ReadOnly = true;
             this.textBox21.Size = new System.Drawing.Size(123, 21);
             this.textBox21.TabIndex = 39;
             this.textBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -318,184 +474,29 @@
             this.textBox1.Text = " SAN SEBASTIAN TENOCHTITLAN  S.P.R DE R.L\r\nFORMATO DE INVENTARIO DE UNIDAD";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // pictureBox1
+            // pictureBox2
             // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(80, 91);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(0, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(80, 91);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
             // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.LightGray;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(3, 136);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(403, 28);
-            this.textBox2.TabIndex = 70;
-            this.textBox2.Text = "Salida";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.Color.LightGray;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(460, 136);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(406, 28);
-            this.textBox3.TabIndex = 71;
-            this.textBox3.Text = "Llegada";
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // fecha_salida
-            // 
-            this.fecha_salida.Location = new System.Drawing.Point(0, 170);
-            this.fecha_salida.Name = "fecha_salida";
-            this.fecha_salida.Size = new System.Drawing.Size(151, 20);
-            this.fecha_salida.TabIndex = 72;
-            // 
-            // fecha_llegada
-            // 
-            this.fecha_llegada.Location = new System.Drawing.Point(460, 172);
-            this.fecha_llegada.Name = "fecha_llegada";
-            this.fecha_llegada.Size = new System.Drawing.Size(151, 20);
-            this.fecha_llegada.TabIndex = 76;
-            // 
-            // textBox4
-            // 
-            this.textBox4.BackColor = System.Drawing.Color.White;
-            this.textBox4.Enabled = false;
-            this.textBox4.Location = new System.Drawing.Point(768, 164);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(97, 28);
-            this.textBox4.TabIndex = 75;
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox5
-            // 
-            this.textBox5.BackColor = System.Drawing.Color.LightGray;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(718, 164);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(50, 28);
-            this.textBox5.TabIndex = 74;
-            this.textBox5.Text = "Hora:";
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox6
-            // 
-            this.textBox6.BackColor = System.Drawing.Color.White;
-            this.textBox6.Enabled = false;
-            this.textBox6.Location = new System.Drawing.Point(614, 164);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(105, 28);
-            this.textBox6.TabIndex = 73;
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // comboruta
-            // 
-            this.comboruta.FormattingEnabled = true;
-            this.comboruta.Location = new System.Drawing.Point(80, 211);
-            this.comboruta.Name = "comboruta";
-            this.comboruta.Size = new System.Drawing.Size(221, 21);
-            this.comboruta.TabIndex = 77;
-            // 
-            // comboeco
-            // 
-            this.comboeco.FormattingEnabled = true;
-            this.comboeco.Location = new System.Drawing.Point(80, 245);
-            this.comboeco.Name = "comboeco";
-            this.comboeco.Size = new System.Drawing.Size(71, 21);
-            this.comboeco.TabIndex = 78;
-            // 
-            // textBox7
-            // 
-            this.textBox7.BackColor = System.Drawing.Color.White;
-            this.textBox7.Enabled = false;
-            this.textBox7.Location = new System.Drawing.Point(747, 287);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(119, 21);
-            this.textBox7.TabIndex = 82;
-            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox8
-            // 
-            this.textBox8.BackColor = System.Drawing.Color.LightGray;
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(662, 287);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.ReadOnly = true;
-            this.textBox8.Size = new System.Drawing.Size(85, 21);
-            this.textBox8.TabIndex = 81;
-            this.textBox8.Text = "Combustible R:";
-            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox9
-            // 
-            this.textBox9.BackColor = System.Drawing.Color.White;
-            this.textBox9.Enabled = false;
-            this.textBox9.Location = new System.Drawing.Point(540, 287);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.ReadOnly = true;
-            this.textBox9.Size = new System.Drawing.Size(123, 21);
-            this.textBox9.TabIndex = 80;
-            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox10
-            // 
-            this.textBox10.BackColor = System.Drawing.Color.LightGray;
-            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(460, 287);
-            this.textBox10.Multiline = true;
-            this.textBox10.Name = "textBox10";
-            this.textBox10.ReadOnly = true;
-            this.textBox10.Size = new System.Drawing.Size(80, 21);
-            this.textBox10.TabIndex = 79;
-            this.textBox10.Text = "Km. Retorno:";
-            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Navy;
-            this.button1.Location = new System.Drawing.Point(375, 369);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(108, 23);
-            this.button1.TabIndex = 83;
-            this.button1.Text = "Registrar";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // Formato_Unidad
+            // Formato_Unidad_Retorno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(901, 453);
             this.Controls.Add(this.panel1);
-            this.Name = "Formato_Unidad";
-            this.Text = "Salida de Unidad";
-            this.Load += new System.EventHandler(this.Formato_Unidad_Load);
+            this.Name = "Formato_Unidad_Retorno";
+            this.Text = "Formato_Unidad_Retorno";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -503,11 +504,23 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.ComboBox comboeco;
+        private System.Windows.Forms.ComboBox comboruta;
+        private System.Windows.Forms.DateTimePicker fecha_llegada;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.DateTimePicker fecha_salida;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox textBox22;
+        private System.Windows.Forms.TextBox textBox23;
         private System.Windows.Forms.TextBox textBox40;
         private System.Windows.Forms.TextBox textBox41;
         private System.Windows.Forms.TextBox textBox34;
@@ -519,22 +532,10 @@
         private System.Windows.Forms.TextBox textBox25;
         private System.Windows.Forms.TextBox textBox21;
         private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.TextBox textBox23;
-        private System.Windows.Forms.ComboBox comboeco;
-        private System.Windows.Forms.ComboBox comboruta;
-        private System.Windows.Forms.DateTimePicker fecha_llegada;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.DateTimePicker fecha_salida;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

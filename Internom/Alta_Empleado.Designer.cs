@@ -67,7 +67,6 @@
             this.label1.Size = new System.Drawing.Size(57, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre";
-          
             // 
             // txtnombre
             // 
@@ -75,7 +74,6 @@
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.Size = new System.Drawing.Size(227, 20);
             this.txtnombre.TabIndex = 1;
-           
             // 
             // label2
             // 
@@ -220,7 +218,6 @@
             this.txtfechaingreso.Name = "txtfechaingreso";
             this.txtfechaingreso.Size = new System.Drawing.Size(227, 20);
             this.txtfechaingreso.TabIndex = 17;
-         
             // 
             // label8
             // 
@@ -256,7 +253,6 @@
             this.id_dpto.Size = new System.Drawing.Size(104, 20);
             this.id_dpto.TabIndex = 21;
             this.id_dpto.Visible = false;
-          
             // 
             // label9
             // 
@@ -277,6 +273,7 @@
             this.txtnac.Name = "txtnac";
             this.txtnac.Size = new System.Drawing.Size(227, 20);
             this.txtnac.TabIndex = 23;
+            this.txtnac.TextChanged += new System.EventHandler(this.txtnac_TextChanged);
             // 
             // dateTimePicker2
             // 
