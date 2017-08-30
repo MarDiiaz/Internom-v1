@@ -129,7 +129,9 @@ namespace Internom
 
         private void formatoInvUnidadToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            Rendimiento_Unidades ru = new Rendimiento_Unidades();
+            ru.Show();
+            Close();
         }
     }
 }

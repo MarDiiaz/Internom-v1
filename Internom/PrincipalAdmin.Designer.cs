@@ -144,7 +144,7 @@
             // 
             this.registroVehiculoToolStripMenuItem.ForeColor = System.Drawing.Color.Navy;
             this.registroVehiculoToolStripMenuItem.Name = "registroVehiculoToolStripMenuItem";
-            this.registroVehiculoToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.registroVehiculoToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.registroVehiculoToolStripMenuItem.Text = "Registro Vehiculo";
             this.registroVehiculoToolStripMenuItem.Click += new System.EventHandler(this.registroVehiculoToolStripMenuItem_Click);
             // 
@@ -152,8 +152,8 @@
             // 
             this.formatoInvUnidadToolStripMenuItem1.ForeColor = System.Drawing.Color.Navy;
             this.formatoInvUnidadToolStripMenuItem1.Name = "formatoInvUnidadToolStripMenuItem1";
-            this.formatoInvUnidadToolStripMenuItem1.Size = new System.Drawing.Size(182, 22);
-            this.formatoInvUnidadToolStripMenuItem1.Text = "Formato Inv. Unidad";
+            this.formatoInvUnidadToolStripMenuItem1.Size = new System.Drawing.Size(165, 22);
+            this.formatoInvUnidadToolStripMenuItem1.Text = "Rendimiento";
             this.formatoInvUnidadToolStripMenuItem1.Click += new System.EventHandler(this.formatoInvUnidadToolStripMenuItem1_Click);
             // 
             // pictureBox1

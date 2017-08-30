@@ -120,6 +120,31 @@ namespace Internom
 
         }
 
+        // catalogo unidades
+        public void catalogounidades(ComboBox un)
+        {
+
+            try
+            {
+                cmd = new SqlCommand("Select eco, id_unidad from unidades ", cn);
+                dr = cmd.ExecuteReader();
+
+                while (dr.Read())
+                {
+                    un.Items.Add(dr["eco"].ToString());
+                    ///el valor del combobox sera el id del departamento 
+                    un.ValueMember = (dr["id_unidad"].ToString());
+                    un.DisplayMember = (dr["eco"].ToString());
+                }
+                dr.Close();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("no se lleno el cb " + ex.ToString());
+            }
+
+        }
 
 
 
@@ -154,8 +179,7 @@ namespace Internom
         }
 
 
+
         
-
-
     }
 }

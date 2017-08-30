@@ -70,11 +70,21 @@
     <Reference Include="MessagingToolkit.QRCode, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MessagingToolkit.QRCode.1.3.0\lib\MessagingToolkit.QRCode.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -189,6 +199,12 @@
     <Compile Include="Registro_salida.Designer.cs">
       <DependentUpon>Registro_salida.cs</DependentUpon>
     </Compile>
+    <Compile Include="Rendimiento_Unidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rendimiento_Unidades.Designer.cs">
+      <DependentUpon>Rendimiento_Unidades.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReporteDiario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -274,6 +290,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Registro_salida.resx">
       <DependentUpon>Registro_salida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rendimiento_Unidades.resx">
+      <DependentUpon>Rendimiento_Unidades.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReporteDiario.resx">
       <DependentUpon>ReporteDiario.cs</DependentUpon>

@@ -251,6 +251,7 @@ namespace Internom
 
                 if (fechahoy.Text != fecha.ToString() || fechahoy.Text == "")
                 {
+
                     string salida = "Acceso Correcto";
                     try
                     {
