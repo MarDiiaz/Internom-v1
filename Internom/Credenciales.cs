@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -77,8 +78,29 @@ namespace Internom
                 textBox5.TextAlign = HorizontalAlignment.Center;
                 textBox1.TextAlign = HorizontalAlignment.Center;
 
+                string imagen;
+                imagen = textBox4.Text + ".jpg";
+                //// la carpeta de imagenes se encuentra ubicada en internom\bin\\debug\\fotos
+                foto.Load(Application.StartupPath + @"\fotos\" +imagen);
+                foto.SizeMode = PictureBoxSizeMode.StretchImage;
+
+                string codigo;
+                codigo = textBox4.Text + ".jpg";
+                //// la carpeta de imagenes se encuentra ubicada en internom\bin\\debug\\fotos
+               pictureBox3.Image = Image.FromFile(@"C:\Users\MarD\Desktop\Residencias\Internom-v1\Internom\QR codigos\" + imagen);
+               pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+
+
             }
+
+            else
+            {
+                MessageBox.Show("No hay fotografia y/o codido de barras del empleado ");
+            }
+
         }
+
+
 
        
 
@@ -90,43 +112,53 @@ namespace Internom
 
         private void button3_Click(object sender, EventArgs e)
         { //Incializa un componente SaveFileDialog.
+
+
+            if (textBox3.Text=="")
+            {
+                MessageBox.Show("Ingresa vigencia");
+            }
+            else
+            {
+
+            
             SaveFileDialog saveFileDialog = new SaveFileDialog();
             //Cuando buscas archivos te muestra todos los .bmp.
             saveFileDialog.Filter = "JPeg Image|*.jpg|Bitmap Image|*.bmp|Gif Image|*.gif";
             //Titulo
             saveFileDialog.Title = "Guardar gráfico como imagen";
-            // preguntamos si elegiste un nombre de archivo.
-            if (saveFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                //Extención del archivo por defecto segun el filtro del saveFileDialog
-                switch (saveFileDialog.FilterIndex)
+                // preguntamos si elegiste un nombre de archivo.
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    case 1:
-                        saveFileDialog.DefaultExt = "jpg";
-                        break;
+                    //Extención del archivo por defecto segun el filtro del saveFileDialog
+                    switch (saveFileDialog.FilterIndex)
+                    {
+                        case 1:
+                            saveFileDialog.DefaultExt = "jpg";
+                            break;
 
-                    case 2:
-                        saveFileDialog.DefaultExt = "bmp";
-                        break;
+                        case 2:
+                            saveFileDialog.DefaultExt = "bmp";
+                            break;
 
-                    case 3:
-                        saveFileDialog.DefaultExt = "gif";
-                        break;
+                        case 3:
+                            saveFileDialog.DefaultExt = "gif";
+                            break;
+                    }
+                    //Obtenemos alto y ancho del panel
+                    int width = panel1.Width;
+                    int height = panel1.Height;
+                    //Inicializamos un objeto BitMap con las dimensiones del Panel
+                    Bitmap bitMap = new Bitmap(width, height);
+                    //Inicializamos un objeto Rectangle en la posicion 0,0 y con dimensiones iguales a las del panel.
+                    //0,0 y las mismas dimensiones del panel porque queremos tomar todo el panel
+                    // o si solo queremos tomar una parte pues podemos dar un punto de inicio diferente y dimensiones distintas.
+                    Rectangle rec = new Rectangle(0, 0, width, height);
+                    //Este metodo hace la magia de copiar las graficas a el objeto Bitmap
+                    panel1.DrawToBitmap(bitMap, rec);
+                    // Y por ultimo salvamos el archivo pasando como parametro el nombre que asignamos en el saveDialogFile
+                    bitMap.Save(saveFileDialog.FileName);
                 }
-                //Obtenemos alto y ancho del panel
-                int width = panel1.Width;
-                int height = panel1.Height;
-                //Inicializamos un objeto BitMap con las dimensiones del Panel
-                Bitmap bitMap = new Bitmap(width, height);
-                //Inicializamos un objeto Rectangle en la posicion 0,0 y con dimensiones iguales a las del panel.
-                //0,0 y las mismas dimensiones del panel porque queremos tomar todo el panel
-                // o si solo queremos tomar una parte pues podemos dar un punto de inicio diferente y dimensiones distintas.
-                Rectangle rec = new Rectangle(0, 0, width, height);
-                //Este metodo hace la magia de copiar las graficas a el objeto Bitmap
-                panel1.DrawToBitmap(bitMap, rec);
-                // Y por ultimo salvamos el archivo pasando como parametro el nombre que asignamos en el saveDialogFile
-                bitMap.Save(saveFileDialog.FileName);
-                
 
             }
         }

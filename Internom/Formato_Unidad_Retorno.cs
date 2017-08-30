@@ -119,9 +119,17 @@ namespace Internom
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox4.Text == "" | textBox9.Text == "" | textBox7.Text == "")
+            if (textBox4.Text == "" | textBox9.Text == "" | textBox7.Text == "" )
             {
                 MessageBox.Show("Faltan Datos");
+               
+            }
+            int kmr = Convert.ToInt32(textBox9.Text);
+            int kms = Convert.ToInt32(textBox21.Text);
+
+            if (kmr < kms)
+            {
+                MessageBox.Show("Verificar kilometraje de retorno");
             }
             else
             {

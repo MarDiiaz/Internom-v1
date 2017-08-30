@@ -33,7 +33,6 @@
             this.button6 = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.button1 = new System.Windows.Forms.Button();
-        
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,11 +74,9 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(117, 22);
             this.button1.TabIndex = 13;
-            this.button1.Text = "Importar Excel";
+            this.button1.Text = "Exportar Excel";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            //
             // 
             // ReporteDiario
             // 
