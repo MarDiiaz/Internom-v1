@@ -43,7 +43,7 @@
             this.textBox29 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox28 = new System.Windows.Forms.TextBox();
+            this.descripcion = new System.Windows.Forms.TextBox();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.textBox24 = new System.Windows.Forms.TextBox();
             this.textBox25 = new System.Windows.Forms.TextBox();
@@ -72,6 +72,8 @@
             this.btn_imprimir = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.id_emp = new System.Windows.Forms.TextBox();
+            this.id_inc = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -93,7 +95,7 @@
             this.panel1.Controls.Add(this.textBox29);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.textBox28);
+            this.panel1.Controls.Add(this.descripcion);
             this.panel1.Controls.Add(this.textBox26);
             this.panel1.Controls.Add(this.textBox24);
             this.panel1.Controls.Add(this.textBox25);
@@ -251,14 +253,14 @@
             this.label1.TabIndex = 32;
             this.label1.Text = "Solicita";
             // 
-            // textBox28
+            // descripcion
             // 
-            this.textBox28.Location = new System.Drawing.Point(120, 345);
-            this.textBox28.Multiline = true;
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(520, 60);
-            this.textBox28.TabIndex = 31;
-            this.textBox28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.descripcion.Location = new System.Drawing.Point(120, 345);
+            this.descripcion.Multiline = true;
+            this.descripcion.Name = "descripcion";
+            this.descripcion.Size = new System.Drawing.Size(520, 60);
+            this.descripcion.TabIndex = 31;
+            this.descripcion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox26
             // 
@@ -567,15 +569,33 @@
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
             // 
+            // id_emp
+            // 
+            this.id_emp.Location = new System.Drawing.Point(757, 196);
+            this.id_emp.Name = "id_emp";
+            this.id_emp.Size = new System.Drawing.Size(100, 20);
+            this.id_emp.TabIndex = 46;
+            // 
+            // id_inc
+            // 
+            this.id_inc.Location = new System.Drawing.Point(757, 232);
+            this.id_inc.Name = "id_inc";
+            this.id_inc.Size = new System.Drawing.Size(100, 20);
+            this.id_inc.TabIndex = 47;
+            // 
             // Permisos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(899, 608);
+            this.Controls.Add(this.id_inc);
+            this.Controls.Add(this.id_emp);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.btn_imprimir);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
             this.Name = "Permisos";
             this.Text = "Permisos";
             this.Load += new System.EventHandler(this.Permisos_Load);
@@ -608,7 +628,7 @@
         private System.Windows.Forms.TextBox textBox14;
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
-        private System.Windows.Forms.TextBox textBox28;
+        private System.Windows.Forms.TextBox descripcion;
         private System.Windows.Forms.TextBox textBox26;
         private System.Windows.Forms.TextBox textBox24;
         private System.Windows.Forms.TextBox textBox25;
@@ -632,5 +652,7 @@
         private System.Windows.Forms.TextBox textBox21;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox id_emp;
+        private System.Windows.Forms.TextBox id_inc;
     }
 }

@@ -183,6 +183,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(901, 453);
             this.Controls.Add(this.pictureBox1);
@@ -197,6 +198,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.hora);
             this.Controls.Add(this.monthCalendar1);
+            this.MaximizeBox = false;
             this.Name = "Registro_Entrada";
             this.Text = "Registro Visitantes";
             this.Load += new System.EventHandler(this.Registro_Visitas_Load);

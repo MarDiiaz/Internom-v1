@@ -50,7 +50,6 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(755, 178);
             this.dataGridView1.TabIndex = 0;
-           
             // 
             // button6
             // 
@@ -104,7 +103,6 @@
             this.nombre.Name = "nombre";
             this.nombre.Size = new System.Drawing.Size(284, 20);
             this.nombre.TabIndex = 15;
-          
             // 
             // pictureBox1
             // 
@@ -123,6 +121,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(901, 453);
             this.Controls.Add(this.pictureBox1);
@@ -132,6 +131,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.dataGridView1);
+            this.MaximizeBox = false;
             this.Name = "Catalogo_empleados";
             this.Text = "Catalogo_empleados";
             this.Load += new System.EventHandler(this.Catalogo_empleados_Load);

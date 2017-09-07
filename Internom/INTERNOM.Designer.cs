@@ -157,6 +157,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(901, 453);
             this.Controls.Add(this.menuStrip1);
@@ -165,6 +166,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.pictureBox1);
+            this.MaximizeBox = false;
             this.Name = "INTERNOM";
             this.Text = "INTERNOM";
             this.Load += new System.EventHandler(this.INTERNOM_Load);

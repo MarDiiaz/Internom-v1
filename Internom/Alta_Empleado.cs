@@ -66,6 +66,8 @@ namespace Internom
                 txtfechaingreso.Text = "";
                 comboBox1.Text = "";
                 txtnac.Text = "";
+
+               
             }
         }
 

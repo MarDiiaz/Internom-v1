@@ -87,7 +87,6 @@
             this.qrCodeImgControl1.TabIndex = 20;
             this.qrCodeImgControl1.TabStop = false;
             this.qrCodeImgControl1.Text = "qrCodeImgControl1";
-           
             // 
             // button1
             // 
@@ -158,6 +157,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(901, 453);
             this.Controls.Add(this.panelcb);
@@ -170,6 +170,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.MaximizeBox = false;
             this.Name = "GeneradorQR";
             this.Text = "Generador de QR";
             this.Load += new System.EventHandler(this.GeneradorQR_Load);

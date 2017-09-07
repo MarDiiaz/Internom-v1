@@ -45,7 +45,7 @@ namespace Internom
                     cb.ValueMember = (dr["id_incidencia"].ToString());
                     cb.DisplayMember = (dr["nombre_inc"].ToString());
                 }
-                dr.Close();
+                
             }
             catch (Exception ex)
             {
@@ -56,7 +56,7 @@ namespace Internom
         }
         private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            id_inc.Text = checkedListBox1.Text.ToString();
         }
 
        
@@ -101,16 +101,53 @@ namespace Internom
 
         private void btn_imprimir_Click(object sender, EventArgs e)
         {
+           
+
+            if (textBox13.Text == "" | textBox18.Text == "" |  textBox14.Text == "" )
+            {
+                MessageBox.Show("Faltan Datos");
+            }
+            else
+            {
+                try
+                {
+
+                    SqlConnection con = new SqlConnection("Data Source = MARDIAZ\\SQLEXPRESS; Initial Catalog = internom; Initial Catalog = internom; Integrated Security = True");
+                    SqlCommand cadcon;
+                    con.Open();
+                    cadcon = new SqlCommand("Insert into permisos (descripcion,fecha_elaboracion,fecha_solicitada,id_empleado,incidencia) values ('" + descripcion.Text + "','" + textBox13.Text + "','" + textBox14.Text + "'," +id_emp.Text + ",'" + id_inc.Text + "')", con);
+                    cadcon.ExecuteNonQuery();
+
+                    // MessageBox.Show(salid);
+                    MessageBox.Show("Permiso Guardado  ");
+                    
+                    textBox14.Text = "";
+
+                    id_emp.Text = "";
+                    
+                }
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show("verifica los datos " + ex.ToString());
+                    
+                }
+
+            }
             checkedListBox1.ClearSelected();
 
 
             System.Drawing.Printing.PrintDocument doc = new System.Drawing.Printing.PrintDocument();
-                doc.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(doc_PrintPage);
+            doc.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(doc_PrintPage);
             DialogResult result = printDialog1.ShowDialog();
-           // printPreviewDialog1.Document = doc;
+            // printPreviewDialog1.Document = doc;
             //printPreviewDialog1.ShowDialog();
-           doc.Print();
-            
+            doc.Print();
+
+
+
+
+
         }
 
         private void label9_Click(object sender, EventArgs e)
@@ -133,6 +170,7 @@ namespace Internom
                 textBox19.Text = leer["nombre_dpto"].ToString();
                string name = leer["nombre"].ToString();
                 string last_name = leer["apellidos"].ToString();
+               id_emp.Text = leer["id_empleado"].ToString();
 
                 textBox15.Text =  name + last_name;
                 //string imagen;

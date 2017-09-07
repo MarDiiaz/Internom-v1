@@ -211,6 +211,12 @@
     <Compile Include="ReporteDiario.Designer.cs">
       <DependentUpon>ReporteDiario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reporte_permisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte_permisos.Designer.cs">
+      <DependentUpon>Reporte_permisos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reporte_Vacacional.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -296,6 +302,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ReporteDiario.resx">
       <DependentUpon>ReporteDiario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_permisos.resx">
+      <DependentUpon>Reporte_permisos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reporte_Vacacional.resx">
       <DependentUpon>Reporte_Vacacional.cs</DependentUpon>

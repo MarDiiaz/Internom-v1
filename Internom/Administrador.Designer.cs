@@ -49,7 +49,6 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(152, 21);
             this.comboBox1.TabIndex = 2;
-            
             // 
             // contraseña
             // 
@@ -58,7 +57,6 @@
             this.contraseña.PasswordChar = '*';
             this.contraseña.Size = new System.Drawing.Size(152, 20);
             this.contraseña.TabIndex = 3;
-           
             // 
             // label2
             // 
@@ -70,7 +68,6 @@
             this.label2.Size = new System.Drawing.Size(67, 18);
             this.label2.TabIndex = 4;
             this.label2.Text = "Usuario";
-     
             // 
             // label3
             // 
@@ -93,7 +90,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(108, 97);
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
-          
             // 
             // button1
             // 
@@ -146,6 +142,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(901, 453);
@@ -158,6 +155,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.contraseña);
             this.Controls.Add(this.comboBox1);
+            this.MaximizeBox = false;
             this.Name = "Administrador";
             this.Text = "Administador";
             this.Load += new System.EventHandler(this.LoginAdmin_Load);

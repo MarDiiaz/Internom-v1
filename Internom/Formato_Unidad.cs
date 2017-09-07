@@ -40,6 +40,9 @@ namespace Internom
             c.catalogounidades(comboeco);
             string fecha = DateTime.Now.ToShortDateString();
             textBox23.Text = fecha;
+            string hora = DateTime.Now.ToShortTimeString();
+            textBox13.Text = hora;
+            textBox24.Focus();
         }
 
 

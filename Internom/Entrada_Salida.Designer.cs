@@ -87,17 +87,19 @@
             this.pictureBox2.Size = new System.Drawing.Size(236, 214);
             this.pictureBox2.TabIndex = 28;
             this.pictureBox2.TabStop = false;
-       
+            // 
             // Entrada_Salida
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(901, 453);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.MaximizeBox = false;
             this.Name = "Entrada_Salida";
             this.Text = "Entrada_Salida";
             this.Load += new System.EventHandler(this.Entrada_Salida_Load);

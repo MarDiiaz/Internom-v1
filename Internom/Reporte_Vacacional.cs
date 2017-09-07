@@ -11,12 +11,12 @@ using System.Windows.Forms;
 
 namespace Internom
 {
-    public partial class txtdias : Form
+    public partial class Reporte_Vacacional : Form
     {
 
         SqlConnection c = new SqlConnection("Data Source=MARDIAZ\\SQLEXPRESS;Initial Catalog=internom;Initial Catalog=internom;Integrated Security=True");
 
-        public txtdias()
+        public Reporte_Vacacional()
         {
             InitializeComponent();
         }
@@ -28,7 +28,7 @@ namespace Internom
             ////////////// Metodo para obtener los dias de antiguedad de cada trabajador
           
             SqlCommand comando;
-            comando = new SqlCommand("select fecha_ingreso,nombre,apellidos from empleados ", c);
+            comando = new SqlCommand("select fecha_ingreso,nombre,apellidos,id_empleado from empleados  where no_nomina='"+nomina.Text+"'", c);
 
             SqlDataReader r;
             c.Open();
@@ -38,42 +38,71 @@ namespace Internom
 
                 string  fecha_ingreso = r["fecha_ingreso"].ToString();
                 string  id = r["id_empleado"].ToString();
-               
+                string nombre = r["nombre"].ToString();
+                string apellidos = r["apellidos"].ToString();
+                string nombre_completo = nombre + apellidos;
+                txtnombre.Text = nombre_completo;
+                txtfecha_ingreso.Text = fecha_ingreso;
+               // string fecha_hoy = DateTime.Now.ToLongDateString();
+
+
                 string fi = Convert.ToDateTime(fecha_ingreso).ToShortDateString();
-                
 
                 DateTime fe_ing = Convert.ToDateTime(fi);
                 DateTime fe_hoy = DateTime.Now;
-                TimeSpan ts = fe_hoy -fe_ing ;
-               int dias = ts.Days;
+                TimeSpan ts = fe_hoy - fe_ing;
+                int dias = ts.Days;
 
                 string dias_trabajados = Convert.ToString(dias);
-                string dias_vaca;
-                if (dias_trabajados=="365")
-                {
-                    dias_vaca= "6";
+             
                 
-                    
-                }
-                else
+                txtdias.Text = dias_trabajados;
+                
+                int anios = dias / 365;
+                txtanios.Text = anios.ToString();
+                int diasvac=0;
+                if (anios<=0.9)
                 {
-                    dias_vaca = "0";
+
+                    diasvac = 0;
                 }
-                c.Close();
+
+               else if (anios>=0.1 & anios<=1.9)
+                {
+                    diasvac = 6;
+                }
+              else  if (anios>=2 & anios<=2.9)
+                {
+                    diasvac = 8;
+                
+                }
+                else if (anios >=3 & anios<=3.9)
+                {
+                    diasvac = 10;
+                }
+                else if (anios>=4 & anios<=4.9)
+                {
+
+                    diasvac = 12;
+
+                }
+                else if (anios>=5 & anios<=9.9)
+                {
+                    diasvac = 14;
+                }
+
+                else if (anios >= 10)
+                {
+                    diasvac = 16;
+                }
+                txtdiasvaca.Text = diasvac.ToString();
+
+                
+               
                 ///////////////////// FIN DEL METODO
 
 
-                SqlCommand cad;
-                c.Open();
-                cad = new SqlCommand("insert into  vacaciones( id_empleado,antiguedad,dias_otorgados,dias_tomados,dias_restantes,prima_vacacional) values (" + id + ", '" + dias + "','"+dias_vaca+"','0','0','0' )", c);
-                SqlDataReader re;
-                re = cad.ExecuteReader();
-                if (re.Read() == true)
-
-                {
-                }
-                c.Close();
-
+                
             }
         }
 
@@ -93,6 +122,46 @@ namespace Internom
         private void Reporte_Vacacional_Load(object sender, EventArgs e)
         {
          
+        }
+
+        private void no_TextChanged(object sender, EventArgs e)
+        {
+            antiguedades();
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtdiasantes_TextChanged(object sender, EventArgs e)
+        {
+          string dias1=  txtdiasvaca.Text;
+          string dias2 = txtdiasantes.Text;
+
+            int a = Convert.ToInt32(dias1);
+            int b = Convert.ToInt32(dias2);
+            int sum = a + b;
+            string total = Convert.ToString(sum);
+            txttotaldias.Text = total;
+
+        }
+
+        private void txtrestantes_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txttomados_TextChanged(object sender, EventArgs e)
+        {
+
+
+            int tt = Convert.ToInt32(txttotaldias.Text);
+            int tom = Convert.ToInt32(txttomados.Text);
+            int rest = tt - tom;
+
+            txtrestantes.Text = rest.ToString();
+
         }
     }
 }

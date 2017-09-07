@@ -300,6 +300,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(901, 453);
@@ -327,6 +328,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtnombre);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
             this.Name = "Alta_Empleado";
             this.Text = "Alta_Empleado";
             this.Load += new System.EventHandler(this.Alta_Empleado_Load);

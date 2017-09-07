@@ -62,6 +62,7 @@ namespace Internom
             }
 
             dr.Close();
+            textBox9.Focus();
         }
 
 
@@ -100,7 +101,9 @@ namespace Internom
         {
 
             catalogounidades(comboBox1);
-
+            string hora = DateTime.Now.ToShortTimeString();
+            textBox4.Text = hora;
+            
 
 
         }
@@ -185,6 +188,11 @@ namespace Internom
             INTERNOM inte = new INTERNOM();
             inte.Show();
             Close();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

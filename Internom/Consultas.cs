@@ -60,7 +60,7 @@ namespace Internom
 
         private void button3_Click(object sender, EventArgs e)
         {
-            txtdias rva = new txtdias();
+            Reporte_Vacacional rva = new Reporte_Vacacional();
             rva.Show();
             Close();
         }
@@ -68,6 +68,13 @@ namespace Internom
         private void Consultas_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Reporte_permisos rp = new Reporte_permisos();
+            rp.Show();
+            Close();
         }
     }
 }

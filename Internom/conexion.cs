@@ -162,7 +162,7 @@ namespace Internom
                 cmd = new SqlCommand("Insert into empleados(nombre,apellidos,telefono,seguro,fecha_ingreso,id_departamento,no_nomina,cargo,fecha_nacimiento)values('" + txtnombre + "','" + txtapellidos + "','" + txttelefono + "','" + txtseguro + "','" + txtfecha + "'," + id_dpto + ",'" + nomina + "','" + txtcargo + "','"+txtnac+"')", cn);
                 cmd.ExecuteNonQuery();
 
-                cn.Close();
+                //cn.Close();
 
             }
             catch (Exception ex)
