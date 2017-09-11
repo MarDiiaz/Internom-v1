@@ -79,6 +79,7 @@
     <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.WebForms.DLL</HintPath>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
@@ -235,11 +236,11 @@
     <Compile Include="Rutas.Designer.cs">
       <DependentUpon>Rutas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Turnos.cs">
+    <Compile Include="calculo_primavacacional.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Turnos.Designer.cs">
-      <DependentUpon>Turnos.cs</DependentUpon>
+    <Compile Include="calculo_primavacacional.Designer.cs">
+      <DependentUpon>calculo_primavacacional.cs</DependentUpon>
     </Compile>
     <Compile Include="Vehiculos.cs">
       <SubType>Form</SubType>
@@ -315,8 +316,8 @@
     <EmbeddedResource Include="Rutas.resx">
       <DependentUpon>Rutas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Turnos.resx">
-      <DependentUpon>Turnos.cs</DependentUpon>
+    <EmbeddedResource Include="calculo_primavacacional.resx">
+      <DependentUpon>calculo_primavacacional.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vehiculos.resx">
       <DependentUpon>Vehiculos.cs</DependentUpon>

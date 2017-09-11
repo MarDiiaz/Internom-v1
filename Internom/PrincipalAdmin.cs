@@ -40,7 +40,7 @@ namespace Internom
 
         private void horariosEmpleadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           Turnos tu = new Turnos();
+           calculo_primavacacional tu = new calculo_primavacacional();
             tu.Show();
             Close();
         }
@@ -131,6 +131,13 @@ namespace Internom
         {
             Rendimiento_Unidades ru = new Rendimiento_Unidades();
             ru.Show();
+            Close();
+        }
+
+        private void primaVacacionalaguinaldoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            calculo_primavacacional cp = new calculo_primavacacional();
+            cp.Show();
             Close();
         }
     }

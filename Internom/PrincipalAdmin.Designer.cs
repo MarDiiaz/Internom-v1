@@ -42,6 +42,7 @@
             this.registroVehiculoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.formatoInvUnidadToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.primaVacacionalaguinaldoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -53,7 +54,8 @@
             this.empleadosToolStripMenuItem,
             this.horariosEmpleadosToolStripMenuItem,
             this.credencialesToolStripMenuItem1,
-            this.flotillaVehicularToolStripMenuItem});
+            this.flotillaVehicularToolStripMenuItem,
+            this.primaVacacionalaguinaldoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(901, 24);
@@ -169,6 +171,14 @@
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
+            // primaVacacionalaguinaldoToolStripMenuItem
+            // 
+            this.primaVacacionalaguinaldoToolStripMenuItem.ForeColor = System.Drawing.Color.Navy;
+            this.primaVacacionalaguinaldoToolStripMenuItem.Name = "primaVacacionalaguinaldoToolStripMenuItem";
+            this.primaVacacionalaguinaldoToolStripMenuItem.Size = new System.Drawing.Size(170, 20);
+            this.primaVacacionalaguinaldoToolStripMenuItem.Text = "Prima vacacional /aguinaldo";
+            this.primaVacacionalaguinaldoToolStripMenuItem.Click += new System.EventHandler(this.primaVacacionalaguinaldoToolStripMenuItem_Click);
+            // 
             // PrincipalAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -205,5 +215,6 @@
         private System.Windows.Forms.ToolStripMenuItem flotillaVehicularToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registroVehiculoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem formatoInvUnidadToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem primaVacacionalaguinaldoToolStripMenuItem;
     }
 }

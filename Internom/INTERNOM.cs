@@ -58,5 +58,10 @@ namespace Internom
             Formato_Unidad_Retorno fur = new Formato_Unidad_Retorno();
             fur.Show();
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+        }
     }
 }

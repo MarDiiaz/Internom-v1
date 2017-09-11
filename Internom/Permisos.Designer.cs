@@ -74,6 +74,7 @@
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.id_emp = new System.Windows.Forms.TextBox();
             this.id_inc = new System.Windows.Forms.TextBox();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -568,6 +569,7 @@
             this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
+            this.printPreviewDialog1.Load += new System.EventHandler(this.printPreviewDialog1_Load);
             // 
             // id_emp
             // 
@@ -582,6 +584,13 @@
             this.id_inc.Name = "id_inc";
             this.id_inc.Size = new System.Drawing.Size(100, 20);
             this.id_inc.TabIndex = 47;
+            // 
+            // reportViewer1
+            // 
+            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
+            this.reportViewer1.Name = "ReportViewer";
+            this.reportViewer1.Size = new System.Drawing.Size(396, 246);
+            this.reportViewer1.TabIndex = 0;
             // 
             // Permisos
             // 
@@ -654,5 +663,6 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.TextBox id_emp;
         private System.Windows.Forms.TextBox id_inc;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
     }
 }

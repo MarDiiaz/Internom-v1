@@ -18,7 +18,7 @@ namespace Internom
         {
             string fecha = DateTime.Today.ToString();
             c.Open();
-            SqlDataAdapter da = new SqlDataAdapter("select  no_nomina, nombre ,apellidos,hora_ingreso,entrada_comida,salida_comida,hora_salida,horas_trabajadas,tiempo_comida from horarios inner join empleados on empleados.id_empleado = horarios.id_empleado where fecha between '"+textBox1.Text+"' and '"+textBox2.Text+"'", c);
+            SqlDataAdapter da = new SqlDataAdapter("select  no_nomina, nombre ,apellidos,fecha,hora_ingreso,entrada_comida,salida_comida,hora_salida,horas_trabajadas,tiempo_comida from horarios inner join empleados on empleados.id_empleado = horarios.id_empleado where fecha between '"+textBox1.Text+"' and '"+textBox2.Text+"'  order by no_nomina", c);
             DataTable dt = new DataTable();
             da.Fill(dt);
             dataGridView1.DataSource = dt;

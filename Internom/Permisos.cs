@@ -186,5 +186,10 @@ namespace Internom
         {
            textBox14.Text = dateTimePicker1.Value.ToString("dd/MM/yyyy");
         }
+
+        private void printPreviewDialog1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

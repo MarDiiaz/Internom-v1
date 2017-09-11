@@ -74,6 +74,10 @@
             this.label3.Size = new System.Drawing.Size(0, 31);
             this.label3.TabIndex = 14;
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.InactiveCaption;
