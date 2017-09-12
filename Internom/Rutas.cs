@@ -18,12 +18,7 @@ namespace Internom
         {
             InitializeComponent();
         }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        
         private void Rutas_Load(object sender, EventArgs e)
         {
             conexion c = new conexion();
@@ -135,12 +130,7 @@ namespace Internom
 
             }
         }
-
-        private void id_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
+    
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             // obtiene el id de la ruta  elegido en el combobox
@@ -282,5 +272,7 @@ namespace Internom
 
             }
         }
+
+       
     }
 }

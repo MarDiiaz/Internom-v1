@@ -70,7 +70,7 @@
             this.txtnombre.Size = new System.Drawing.Size(288, 20);
             this.txtnombre.TabIndex = 16;
             this.txtnombre.Text = " ";
-            this.txtnombre.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+         
             // 
             // label2
             // 
@@ -145,7 +145,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(288, 20);
             this.textBox3.TabIndex = 22;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+          
             // 
             // button1
             // 

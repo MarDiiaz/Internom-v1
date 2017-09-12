@@ -37,12 +37,7 @@ namespace Internom
             pa.Show();
             Close();
         }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
+        
         private void button1_Click(object sender, EventArgs e)
         {
             SaveFileDialog fichero = new SaveFileDialog();
@@ -79,16 +74,7 @@ namespace Internom
             textBox1.Text = dateTimePicker1.Value.ToShortDateString();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
+       
         private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
         {
             textBox2.Text = dateTimePicker2.Value.ToShortDateString();

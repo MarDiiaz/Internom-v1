@@ -59,10 +59,6 @@ namespace Internom
         }
 
        
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -117,11 +113,7 @@ namespace Internom
 
         }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
+    
         private void timer1_Tick_1(object sender, EventArgs e)
         {
             hora.Text = DateTime.Now.ToLongTimeString();

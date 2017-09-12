@@ -186,8 +186,7 @@
             this.textBox6.Location = new System.Drawing.Point(430, 290);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(162, 20);
-            this.textBox6.TabIndex = 26;
-            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            this.textBox6.TabIndex = 26;        
             // 
             // textBox7
             // 
@@ -249,6 +248,7 @@
             this.MaximizeBox = false;
             this.Name = "Vehiculos";
             this.Text = "Alta de Unidad V.";
+            this.Load += new System.EventHandler(this.Vehiculos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

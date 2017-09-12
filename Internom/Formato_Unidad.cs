@@ -17,21 +17,7 @@ namespace Internom
         {
             InitializeComponent();
         }
-
-        private void textBox44_TextChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-           
-        }
-
-        private void textBox34_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void Formato_Unidad_Load(object sender, EventArgs e)
         {
@@ -48,16 +34,7 @@ namespace Internom
             textBox24.Focus();
         }
 
-
-
-        private void textBox23_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-       
-
-
+        
         private void comboruta_SelectedIndexChanged(object sender, EventArgs e)
         {
             id_ruta.Text = comboruta.ValueMember.ToString();
@@ -124,10 +101,7 @@ namespace Internom
             }
         }
 
-        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
-        {
-
-        }
+      
 
         private void button6_Click(object sender, EventArgs e)
         {

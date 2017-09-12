@@ -47,8 +47,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(29, 98);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(822, 299);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.TabIndex = 0;           
             // 
             // button6
             // 
@@ -97,16 +96,14 @@
             this.textBox1.Location = new System.Drawing.Point(250, 52);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 15;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox1.TabIndex = 15;      
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(545, 52);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 16;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.textBox2.TabIndex = 16;          
             // 
             // button2
             // 

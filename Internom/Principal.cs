@@ -52,16 +52,6 @@ namespace Internom
         }
        
       
-        private void Administrador_Opening(object sender, CancelEventArgs e)
-        {
-
-        }
-
-        private void toolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-          
-        }
-
       
         private void horas_trabajada()
         {
@@ -308,10 +298,6 @@ namespace Internom
             label3.Text = DateTime.Now.ToLongTimeString();
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         public void textBox1_TextChanged(object sender, EventArgs e)
         {

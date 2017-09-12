@@ -42,10 +42,6 @@ namespace Internom
 
         }
 
-        private void formatoInvUnidadToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-           
-        }
 
         private void salidaUnidadToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -59,9 +55,6 @@ namespace Internom
             fur.Show();
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

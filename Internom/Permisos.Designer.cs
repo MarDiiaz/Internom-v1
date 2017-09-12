@@ -443,7 +443,7 @@
             this.textBox12.Size = new System.Drawing.Size(183, 21);
             this.textBox12.TabIndex = 12;
             this.textBox12.Text = "Nombre del empleado:";
-            this.textBox12.TextChanged += new System.EventHandler(this.textBox12_TextChanged);
+           
             // 
             // textBox11
             // 
@@ -558,7 +558,7 @@
             this.label9.Size = new System.Drawing.Size(50, 13);
             this.label9.TabIndex = 45;
             this.label9.Text = "Imprimir";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
+        
             // 
             // printPreviewDialog1
             // 
@@ -569,7 +569,7 @@
             this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
-            this.printPreviewDialog1.Load += new System.EventHandler(this.printPreviewDialog1_Load);
+           
             // 
             // id_emp
             // 

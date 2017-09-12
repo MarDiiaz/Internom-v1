@@ -48,8 +48,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(642, 235);
             this.dataGridView1.TabIndex = 1;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
+                        // 
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.RoyalBlue;
@@ -78,7 +77,7 @@
             this.txtfecha1.Name = "txtfecha1";
             this.txtfecha1.Size = new System.Drawing.Size(100, 20);
             this.txtfecha1.TabIndex = 15;
-            this.txtfecha1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            
             // 
             // label1
             // 

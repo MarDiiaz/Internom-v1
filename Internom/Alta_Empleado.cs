@@ -14,7 +14,7 @@ namespace Internom
 {
     public partial class Alta_Empleado : Form
     {
-        SqlConnection cone = new SqlConnection("Data Source=MARDIAZ\\SQLEXPRESS;Initial Catalog=internom;Initial Catalog=internom;Integrated Security=True");
+       
 
         conexion c = new conexion();
 
@@ -103,23 +103,7 @@ namespace Internom
 
         private void txtnomina_TextChanged(object sender, EventArgs e)
         {
-           ///////////////cambiar el metodo de lugar 
-           //     cone.Open();
-           //     string cadcon = "select count (*) from empleados where no_nomina="+txtnomina.Text+"";
-           //     SqlCommand cm = new SqlCommand(cadcon, cone);
-            
-            
-           // int n=Convert.ToInt32(cm.ExecuteScalar());
-           // int a = n;
-
-
-           // cone.Close();
-           // if (a == 1)
-           // {
-           //     MessageBox.Show("Numero de Nomina YA REGISTRADO");
-
-           // }            
-
+          
 
 
         }

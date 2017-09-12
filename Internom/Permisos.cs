@@ -18,10 +18,6 @@ namespace Internom
             InitializeComponent();
         }
 
-        private void textBox12_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
 
         public void incidencias(CheckedListBox cb)
@@ -86,20 +82,7 @@ namespace Internom
             string fecha = DateTime.Now.ToShortDateString();
             textBox13.Text = fecha;
         }
-
-        private void textBox27_TextChanged(object sender, EventArgs e)
-        {
-
-
-        }
-
-        private void printPreviewControl1_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-
-
+        
         private void btn_imprimir_Click(object sender, EventArgs e)
         {
            
@@ -151,10 +134,7 @@ namespace Internom
 
         }
 
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void textBox18_TextChanged(object sender, EventArgs e)
         {
@@ -188,9 +168,6 @@ namespace Internom
            textBox14.Text = dateTimePicker1.Value.ToString("dd/MM/yyyy");
         }
 
-        private void printPreviewDialog1_Load(object sender, EventArgs e)
-        {
-
-        }
+     
     }
 }

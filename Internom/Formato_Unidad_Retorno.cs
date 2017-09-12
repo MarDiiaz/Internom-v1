@@ -107,18 +107,7 @@ namespace Internom
 
 
         }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-
-
-        }
-
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -190,9 +179,6 @@ namespace Internom
             Close();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+     
     }
 }

@@ -113,7 +113,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(877, 429);
             this.panel1.TabIndex = 9;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+          
             // 
             // textBox16
             // 
@@ -340,7 +340,7 @@
             this.textBox23.Size = new System.Drawing.Size(105, 28);
             this.textBox23.TabIndex = 67;
             this.textBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox23.TextChanged += new System.EventHandler(this.textBox23_TextChanged);
+           
             // 
             // textBox40
             // 
@@ -374,7 +374,7 @@
             this.textBox34.Size = new System.Drawing.Size(147, 21);
             this.textBox34.TabIndex = 53;
             this.textBox34.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox34.TextChanged += new System.EventHandler(this.textBox34_TextChanged);
+         
             // 
             // textBox35
             // 

@@ -75,8 +75,7 @@
             this.label3.TabIndex = 14;
             // 
             // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+          
             // 
             // button2
             // 
@@ -137,7 +136,7 @@
             this.formatoInvUnidadToolStripMenuItem.Name = "formatoInvUnidadToolStripMenuItem";
             this.formatoInvUnidadToolStripMenuItem.Size = new System.Drawing.Size(143, 24);
             this.formatoInvUnidadToolStripMenuItem.Text = "Formatos Vehiculos";
-            this.formatoInvUnidadToolStripMenuItem.Click += new System.EventHandler(this.formatoInvUnidadToolStripMenuItem_Click);
+           
             // 
             // salidaUnidadToolStripMenuItem
             // 

@@ -77,7 +77,6 @@
             this.id.Size = new System.Drawing.Size(28, 20);
             this.id.TabIndex = 32;
             this.id.Visible = false;
-            this.id.TextChanged += new System.EventHandler(this.id_TextChanged);
             // 
             // label6
             // 
@@ -118,6 +117,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(117, 20);
             this.textBox2.TabIndex = 26;
+           
             // 
             // label1
             // 

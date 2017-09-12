@@ -34,19 +34,12 @@ namespace Internom
            // this.visitantesTableAdapter.Fill(this.internomDataSet.visitantes);
 
         }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
+        
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
            txtfecha1.Text = dateTimePicker1.Value.ToString("yyy/MM/dd");
         }
-
-       
-
+        
         private void button1_Click(object sender, EventArgs e)
         {
             c.Open();
@@ -58,10 +51,6 @@ namespace Internom
             dataGridView1.DataSource = dt;
             c.Close();
         }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+               
     }
 }

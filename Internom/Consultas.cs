@@ -17,15 +17,7 @@ namespace Internom
             InitializeComponent();
         }
 
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
+     
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -34,10 +26,7 @@ namespace Internom
             Close();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+       
 
         private void button6_Click(object sender, EventArgs e)
         {

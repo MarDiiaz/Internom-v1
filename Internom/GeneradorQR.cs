@@ -41,11 +41,6 @@ namespace Internom
             img.Dispose();
         }
 
-        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
-        {
-
-        }
-
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
             BarcodeLib.Barcode Codigo = new BarcodeLib.Barcode();
