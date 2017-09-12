@@ -35,11 +35,14 @@ namespace Internom
 
         private void Formato_Unidad_Load(object sender, EventArgs e)
         {
+            //carga las rutas 
             conexion c = new conexion();
             c.catalogorutas(comboruta);
             c.catalogounidades(comboeco);
+            //obtiene la fecha de hoy 
             string fecha = DateTime.Now.ToShortDateString();
             textBox23.Text = fecha;
+            // obtiene la hora actuual 
             string hora = DateTime.Now.ToShortTimeString();
             textBox13.Text = hora;
             textBox24.Focus();

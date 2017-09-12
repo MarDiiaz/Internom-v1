@@ -58,6 +58,7 @@
             this.timerqr = new System.Windows.Forms.Timer(this.components);
             this.videoSourcePlayer1 = new AForge.Controls.VideoSourcePlayer();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.label8 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.foto)).BeginInit();
@@ -310,11 +311,11 @@
             // 
             this.felicitacion.AutoSize = true;
             this.felicitacion.BackColor = System.Drawing.Color.Transparent;
-            this.felicitacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.felicitacion.ForeColor = System.Drawing.Color.Navy;
-            this.felicitacion.Location = new System.Drawing.Point(173, 401);
+            this.felicitacion.Font = new System.Drawing.Font("Segoe Script", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.felicitacion.ForeColor = System.Drawing.Color.CadetBlue;
+            this.felicitacion.Location = new System.Drawing.Point(61, 346);
             this.felicitacion.Name = "felicitacion";
-            this.felicitacion.Size = new System.Drawing.Size(0, 31);
+            this.felicitacion.Size = new System.Drawing.Size(0, 33);
             this.felicitacion.TabIndex = 25;
             // 
             // videoSourcePlayer1
@@ -332,6 +333,17 @@
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 6;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.ForestGreen;
+            this.label8.Location = new System.Drawing.Point(55, 392);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(0, 25);
+            this.label8.TabIndex = 32;
+            // 
             // Principal
             // 
             this.AcceptButton = this.button1;
@@ -341,6 +353,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(901, 453);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.foto);
             this.Controls.Add(this.videoSourcePlayer1);
             this.Controls.Add(this.felicitacion);
@@ -406,6 +419,7 @@
         private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.TextBox no;
         private System.Windows.Forms.ToolStripMenuItem permisosToolStripMenuItem;
+        private System.Windows.Forms.Label label8;
     }
 }
 

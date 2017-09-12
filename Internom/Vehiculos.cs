@@ -25,7 +25,8 @@ namespace Internom
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
+           //verifica que todos los campos se hallan llenado 
+
             if (textBox1.Text == "" | textBox2.Text == "" | textBox3.Text == "" | textBox4.Text == "" | textBox5.Text == "" | textBox6.Text == "" | textBox7.Text == "")
 
             {
@@ -43,6 +44,8 @@ namespace Internom
                 cadcon = new SqlCommand("Insert into unidades (marca,modelo,numero,placas,capacidad,verificacion,no_circula) values ('" + textBox3.Text + "','"+textBox4.Text+"','" + textBox1.Text + "','" + textBox2.Text + "','" + textBox5.Text + "','" + textBox6.Text + "','"+ textBox7.Text+"')", con);
                 cadcon.ExecuteNonQuery();
                 MessageBox.Show("Registro Correcto");
+
+                //limpia todos los campos 
                 textBox1.Text = "";
                 textBox1.Focus();
                 textBox2.Text = "";

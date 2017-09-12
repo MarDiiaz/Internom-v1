@@ -51,6 +51,8 @@ namespace Internom
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
+            //obtiene hora y fecha actuales 
             string hora = DateTime.Now.ToShortTimeString();
             string message = "Hora Entrada: " + hora;
             DateTime dt = new DateTime();

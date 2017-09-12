@@ -21,20 +21,7 @@ namespace Internom
             InitializeComponent();
         }
 
-
-
-        private void antiguedades()
-        {
-            ////////////// Metodo para obtener los dias de antiguedad de cada trabajador
-
-           
-        }
-
-
-
-
-
-
+        
 
         private void button6_Click(object sender, EventArgs e)
         {
@@ -45,6 +32,13 @@ namespace Internom
 
         private void Reporte_Vacacional_Load(object sender, EventArgs e)
         {
+            label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 
         }
 
@@ -153,10 +147,17 @@ namespace Internom
                 string nombre = r["nombre"].ToString();
                 string apellidos = r["apellidos"].ToString();
                 string nombre_completo = nombre + " " + apellidos;
+                
+
                 txtnombre.Text = nombre_completo;
+                txtnombre.TextAlign = HorizontalAlignment.Center;
                 txtfecha_ingreso.Text = fecha_ingreso;
+                txtfecha_ingreso.TextAlign = HorizontalAlignment.Center;
                 // string fecha_hoy = DateTime.Now.ToLongDateString();
 
+
+                ////////////// Metodo para obtener los dias de antiguedad de cada trabajador y 
+                // obtener cuantos dias de vacaciones le correcponden de acuerdo a su antiguiedad 
 
                 string fi = Convert.ToDateTime(fecha_ingreso).ToShortDateString();
 
@@ -169,9 +170,11 @@ namespace Internom
 
 
                 txtdias.Text = dias_trabajados;
+                txtdias.TextAlign = HorizontalAlignment.Center;
 
                 int anios = dias / 365;
                 txtanios.Text = anios.ToString();
+                txtanios.TextAlign = HorizontalAlignment.Center;
                 int diasvac = 0;
                 if (anios <= 0.9)
                 {
@@ -208,6 +211,7 @@ namespace Internom
                     diasvac = 16;
                 }
                 txtdiasvaca.Text = diasvac.ToString();
+                txtdiasvaca.TextAlign = HorizontalAlignment.Center;
 
                 c.Close();
 
@@ -221,6 +225,16 @@ namespace Internom
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtnombre_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

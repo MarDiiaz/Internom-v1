@@ -28,7 +28,8 @@ namespace Internom
 
         public void llenarcombo(ComboBox cb)
         {
-            try
+            // carga un una lista de empleados (los que visitan ) para que el visitante puueda seleccionar
+             try
             {
                 cn = new SqlConnection("Data Source=MARDIAZ\\SQLEXPRESS;Initial Catalog=internom;Initial Catalog=internom;Integrated Security=True");
                 cn.Open();
@@ -93,6 +94,8 @@ namespace Internom
             }
             else
             {
+
+                // ingresa los datos del visitante a un regustro en la base de datos 
                 SqlConnection con = new SqlConnection("Data Source = MARDIAZ\\SQLEXPRESS; Initial Catalog = internom; Initial Catalog = internom; Integrated Security = True");
                 SqlCommand cadcon;
                 con.Open();

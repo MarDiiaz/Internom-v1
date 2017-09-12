@@ -61,11 +61,12 @@
             this.label16 = new System.Windows.Forms.Label();
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.aguinaldo = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.no = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.txtnombre = new System.Windows.Forms.TextBox();
+            this.button6 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -107,7 +108,7 @@
             this.txtdiasvaca.Location = new System.Drawing.Point(176, 226);
             this.txtdiasvaca.Name = "txtdiasvaca";
             this.txtdiasvaca.Size = new System.Drawing.Size(100, 20);
-            this.txtdiasvaca.TabIndex = 9;
+            this.txtdiasvaca.TabIndex = 2;
             this.txtdiasvaca.TextChanged += new System.EventHandler(this.txtdiasvaca_TextChanged);
             // 
             // label2
@@ -130,9 +131,9 @@
             this.label4.ForeColor = System.Drawing.Color.Navy;
             this.label4.Location = new System.Drawing.Point(41, 318);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(90, 15);
+            this.label4.Size = new System.Drawing.Size(122, 15);
             this.label4.TabIndex = 14;
-            this.label4.Text = "Dias laborados";
+            this.label4.Text = "Dias laborados (año)";
             // 
             // txtdiaslaborados
             // 
@@ -283,8 +284,10 @@
             // 
             this.textBox11.Location = new System.Drawing.Point(756, 196);
             this.textBox11.Name = "textBox11";
+            this.textBox11.ReadOnly = true;
             this.textBox11.Size = new System.Drawing.Size(100, 20);
             this.textBox11.TabIndex = 27;
+            this.textBox11.Text = "15";
             // 
             // label12
             // 
@@ -302,6 +305,7 @@
             // 
             this.textBox12.Location = new System.Drawing.Point(756, 225);
             this.textBox12.Name = "textBox12";
+            this.textBox12.ReadOnly = true;
             this.textBox12.Size = new System.Drawing.Size(100, 20);
             this.textBox12.TabIndex = 29;
             // 
@@ -334,14 +338,15 @@
             this.label14.ForeColor = System.Drawing.Color.Navy;
             this.label14.Location = new System.Drawing.Point(621, 259);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(90, 15);
+            this.label14.Size = new System.Drawing.Size(122, 15);
             this.label14.TabIndex = 32;
-            this.label14.Text = "Dias laborados";
+            this.label14.Text = "Dias laborados (año)";
             // 
             // textBox14
             // 
             this.textBox14.Location = new System.Drawing.Point(756, 254);
             this.textBox14.Name = "textBox14";
+            this.textBox14.ReadOnly = true;
             this.textBox14.Size = new System.Drawing.Size(100, 20);
             this.textBox14.TabIndex = 31;
             // 
@@ -361,6 +366,7 @@
             // 
             this.textBox15.Location = new System.Drawing.Point(756, 317);
             this.textBox15.Name = "textBox15";
+            this.textBox15.ReadOnly = true;
             this.textBox15.Size = new System.Drawing.Size(100, 20);
             this.textBox15.TabIndex = 35;
             // 
@@ -380,6 +386,7 @@
             // 
             this.textBox16.Location = new System.Drawing.Point(756, 345);
             this.textBox16.Name = "textBox16";
+            this.textBox16.ReadOnly = true;
             this.textBox16.Size = new System.Drawing.Size(100, 20);
             this.textBox16.TabIndex = 37;
             // 
@@ -395,13 +402,13 @@
             this.label17.TabIndex = 40;
             this.label17.Text = "Aguinaldo $";
             // 
-            // textBox17
+            // aguinaldo
             // 
-            this.textBox17.Location = new System.Drawing.Point(391, 395);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.ReadOnly = true;
-            this.textBox17.Size = new System.Drawing.Size(100, 20);
-            this.textBox17.TabIndex = 39;
+            this.aguinaldo.Location = new System.Drawing.Point(391, 395);
+            this.aguinaldo.Name = "aguinaldo";
+            this.aguinaldo.ReadOnly = true;
+            this.aguinaldo.Size = new System.Drawing.Size(100, 20);
+            this.aguinaldo.TabIndex = 39;
             // 
             // label18
             // 
@@ -420,7 +427,7 @@
             this.no.Location = new System.Drawing.Point(391, 118);
             this.no.Name = "no";
             this.no.Size = new System.Drawing.Size(100, 20);
-            this.no.TabIndex = 41;
+            this.no.TabIndex = 1;
             // 
             // button1
             // 
@@ -438,8 +445,22 @@
             // 
             this.txtnombre.Location = new System.Drawing.Point(327, 163);
             this.txtnombre.Name = "txtnombre";
+            this.txtnombre.ReadOnly = true;
             this.txtnombre.Size = new System.Drawing.Size(224, 20);
             this.txtnombre.TabIndex = 44;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.RoyalBlue;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Location = new System.Drawing.Point(0, 431);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(74, 22);
+            this.button6.TabIndex = 45;
+            this.button6.Text = "Regresar";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // calculo_primavacacional
             // 
@@ -447,12 +468,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(901, 453);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.txtnombre);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.no);
             this.Controls.Add(this.label17);
-            this.Controls.Add(this.textBox17);
+            this.Controls.Add(this.aguinaldo);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.textBox16);
             this.Controls.Add(this.label15);
@@ -527,10 +549,11 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox textBox16;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox aguinaldo;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.TextBox no;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtnombre;
+        private System.Windows.Forms.Button button6;
     }
 }

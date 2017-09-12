@@ -62,6 +62,7 @@ namespace Internom
        
         private void doc_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
+            // crea un rectangulo del tamaño del panel para poder imprimirlo 
             int width = panel1.Width;
             int height = panel1.Height;
             ScrollProperties p = this.VerticalScroll;
@@ -136,7 +137,7 @@ namespace Internom
             }
             checkedListBox1.ClearSelected();
 
-
+            // imprime el reectagulo que se creo ya con los datos que ingreso eel empleeado 
             System.Drawing.Printing.PrintDocument doc = new System.Drawing.Printing.PrintDocument();
             doc.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(doc_PrintPage);
             DialogResult result = printDialog1.ShowDialog();

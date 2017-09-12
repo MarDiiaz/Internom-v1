@@ -21,14 +21,18 @@ namespace Internom
         {
             c.Open();
             string fecha = monthCalendar1.TodayDate.ToString();
-            string cadcon = "Select nombre,apellidos,fecha_nacimiento from empleados where fecha_nacimiento='" + fecha + "'";
+            int dia_hoy = DateTime.Now.Day;
+            int mes_actual = DateTime.Now.Month;
+            string cadcon = "Select nombre,apellidos,fecha_nacimiento from empleados where  month (fecha_nacimiento)= '"+mes_actual+"'and DAY ( fecha_nacimiento) = '"+dia_hoy+"'";
             SqlCommand cm = new SqlCommand(cadcon,c);
             SqlDataReader dat = cm.ExecuteReader();
 
             if (dat.Read()==true)
             {
 
-                felicitacion.Text= (dat["nombre"].ToString()+"  "+ dat["apellidos"].ToString() +"  "+" Feliz Cumpleaños");
+                felicitacion.Text= (dat["nombre"].ToString()+"  "+ dat["apellidos"].ToString() );
+                
+                label8.Text = " Feliz Cumpleaños";
 
             }
             
@@ -44,7 +48,7 @@ namespace Internom
         
         private void Form1_Load(object sender, EventArgs e)
         {
-           
+          fecha_nac();
         }
        
       

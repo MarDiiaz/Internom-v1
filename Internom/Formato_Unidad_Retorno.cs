@@ -129,7 +129,7 @@ namespace Internom
             }
             int kmr = Convert.ToInt32(textBox9.Text);
             int kms = Convert.ToInt32(textBox21.Text);
-
+            // valida que el kilometraje de llegada no sea menor que el de salida 
             if (kmr < kms)
             {
                 MessageBox.Show("Verificar kilometraje de retorno");
