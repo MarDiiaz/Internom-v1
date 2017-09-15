@@ -41,8 +41,10 @@
             this.flotillaVehicularToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registroVehiculoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.formatoInvUnidadToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.primaVacacionalaguinaldoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -158,6 +160,14 @@
             this.formatoInvUnidadToolStripMenuItem1.Text = "Rendimiento";
             this.formatoInvUnidadToolStripMenuItem1.Click += new System.EventHandler(this.formatoInvUnidadToolStripMenuItem1_Click);
             // 
+            // primaVacacionalaguinaldoToolStripMenuItem
+            // 
+            this.primaVacacionalaguinaldoToolStripMenuItem.ForeColor = System.Drawing.Color.Navy;
+            this.primaVacacionalaguinaldoToolStripMenuItem.Name = "primaVacacionalaguinaldoToolStripMenuItem";
+            this.primaVacacionalaguinaldoToolStripMenuItem.Size = new System.Drawing.Size(170, 20);
+            this.primaVacacionalaguinaldoToolStripMenuItem.Text = "Prima vacacional /aguinaldo";
+            this.primaVacacionalaguinaldoToolStripMenuItem.Click += new System.EventHandler(this.primaVacacionalaguinaldoToolStripMenuItem_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
@@ -171,13 +181,26 @@
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
-            // primaVacacionalaguinaldoToolStripMenuItem
+            // label1
             // 
-            this.primaVacacionalaguinaldoToolStripMenuItem.ForeColor = System.Drawing.Color.Navy;
-            this.primaVacacionalaguinaldoToolStripMenuItem.Name = "primaVacacionalaguinaldoToolStripMenuItem";
-            this.primaVacacionalaguinaldoToolStripMenuItem.Size = new System.Drawing.Size(170, 20);
-            this.primaVacacionalaguinaldoToolStripMenuItem.Text = "Prima vacacional /aguinaldo";
-            this.primaVacacionalaguinaldoToolStripMenuItem.Click += new System.EventHandler(this.primaVacacionalaguinaldoToolStripMenuItem_Click);
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(686, 399);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 17);
+            this.label1.TabIndex = 7;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.OrangeRed;
+            this.label2.Location = new System.Drawing.Point(748, 359);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 16);
+            this.label2.TabIndex = 8;
             // 
             // PrincipalAdmin
             // 
@@ -186,6 +209,8 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(901, 453);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -216,5 +241,7 @@
         private System.Windows.Forms.ToolStripMenuItem registroVehiculoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem formatoInvUnidadToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem primaVacacionalaguinaldoToolStripMenuItem;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

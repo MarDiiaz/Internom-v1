@@ -13,6 +13,22 @@ namespace Internom
         private void PrincipalAdmin_Load(object sender, EventArgs e)
         {
 
+            string fecha_vigencia = "01/07/2018";
+            DateTime fe_ing = Convert.ToDateTime(fecha_vigencia);
+            DateTime fe_hoy = DateTime.Now;
+            TimeSpan ts = fe_ing - fe_hoy;
+            int dias = ts.Days;
+
+            // si los dias que le quedan al sistema de vigencia son menores que 10 en el panel de administrador (cada que ingrese)
+            // Se mostrara una etiqueta de advertencia con los dias que le quedan al sistema
+            // Una vez que los dias finalicen , el sistema quedara "Inaccesible" se mostrara un Forms donde 
+            // Se notificara que ha expirado y los datos del proveedor en caso de que se dese contratar de nuevo
+            // El plazo se podra manejar por 6 meses como minimo 
+            if (dias<10)
+            {
+                label2.Text = "ADVERTENCIA";
+              label1.Text="Tu sistema expira en: "+ dias + " dias";
+            }
         }
 
         private void consultasToolStripMenuItem_Click(object sender, EventArgs e)

@@ -14,9 +14,19 @@ namespace Internom
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new INTERNOM());
+            string fecha_hoy = DateTime.Now.ToShortDateString();
+            string fecha_vigencia = "01/07/2018";
+
+            if (fecha_hoy == fecha_vigencia)
+            {              
+                Application.Run(new Vigencia_SW());
+            }
+            else
+            {
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
+                Application.Run(new INTERNOM());
+            }
         }
     }
 }
