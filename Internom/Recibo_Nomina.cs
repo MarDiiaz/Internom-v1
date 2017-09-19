@@ -15,9 +15,7 @@ namespace Internom
             // crea un rectangulo del tamaño del panel para poder imprimirlo 
             int width = panel1.Width;
             int height = panel1.Height;
-            ScrollProperties p = this.VerticalScroll;
-            // Bitmap bmp = new Bitmap(width, p.LargeChange, panel1.CreateGraphics());
-
+            ScrollProperties p = this.VerticalScroll;           
             Bitmap bmp = new Bitmap(width, height, panel1.CreateGraphics());
             panel1.DrawToBitmap(bmp, new Rectangle(0, 0, width, height));
             RectangleF bounds = e.PageSettings.PrintableArea;

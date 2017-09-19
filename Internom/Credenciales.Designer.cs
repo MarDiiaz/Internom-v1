@@ -53,6 +53,7 @@
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
             this.label2 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.foto)).BeginInit();
@@ -76,9 +77,9 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(12, 31);
+            this.panel1.Location = new System.Drawing.Point(33, 31);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(254, 379);
+            this.panel1.Size = new System.Drawing.Size(224, 338);
             this.panel1.TabIndex = 10;
             // 
             // textBox2
@@ -86,7 +87,7 @@
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.ForeColor = System.Drawing.Color.Navy;
-            this.textBox2.Location = new System.Drawing.Point(151, 12);
+            this.textBox2.Location = new System.Drawing.Point(108, 12);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 13);
@@ -95,10 +96,11 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(1, 318);
+            this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox5.Location = new System.Drawing.Point(2, 272);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(250, 61);
+            this.pictureBox5.Size = new System.Drawing.Size(220, 61);
             this.pictureBox5.TabIndex = 11;
             this.pictureBox5.TabStop = false;
             // 
@@ -106,7 +108,7 @@
             // 
             this.txtcargo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtcargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcargo.Location = new System.Drawing.Point(36, 282);
+            this.txtcargo.Location = new System.Drawing.Point(22, 231);
             this.txtcargo.Multiline = true;
             this.txtcargo.Name = "txtcargo";
             this.txtcargo.Size = new System.Drawing.Size(180, 20);
@@ -116,7 +118,7 @@
             // 
             this.txtnombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtnombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnombre.Location = new System.Drawing.Point(23, 256);
+            this.txtnombre.Location = new System.Drawing.Point(9, 205);
             this.txtnombre.Multiline = true;
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.Size = new System.Drawing.Size(207, 20);
@@ -128,7 +130,7 @@
             this.foto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.foto.Location = new System.Drawing.Point(78, 132);
             this.foto.Name = "foto";
-            this.foto.Size = new System.Drawing.Size(103, 110);
+            this.foto.Size = new System.Drawing.Size(78, 64);
             this.foto.TabIndex = 11;
             this.foto.TabStop = false;
             // 
@@ -144,10 +146,11 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Location = new System.Drawing.Point(4, 28);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(247, 100);
+            this.pictureBox2.Size = new System.Drawing.Size(220, 86);
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
@@ -156,7 +159,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(1, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(254, 11);
+            this.pictureBox1.Size = new System.Drawing.Size(230, 10);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -168,76 +171,79 @@
             this.panel2.Controls.Add(this.pictureBox4);
             this.panel2.Controls.Add(this.pictureBox7);
             this.panel2.Controls.Add(this.panel3);
+            this.panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel2.Location = new System.Drawing.Point(289, 31);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(254, 379);
+            this.panel2.Size = new System.Drawing.Size(227, 338);
             this.panel2.TabIndex = 10;
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Gray;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(11, 321);
+            this.pictureBox3.Location = new System.Drawing.Point(8, 280);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(233, 38);
+            this.pictureBox3.Size = new System.Drawing.Size(216, 38);
             this.pictureBox3.TabIndex = 15;
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(4, 3);
+            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox4.Location = new System.Drawing.Point(4, 6);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(247, 223);
+            this.pictureBox4.Size = new System.Drawing.Size(220, 185);
             this.pictureBox4.TabIndex = 14;
             this.pictureBox4.TabStop = false;
             // 
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(6, 365);
+            this.pictureBox7.Location = new System.Drawing.Point(6, 321);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(247, 11);
+            this.pictureBox7.Size = new System.Drawing.Size(221, 12);
             this.pictureBox7.TabIndex = 17;
             this.pictureBox7.TabStop = false;
             // 
             // panel3
             // 
             this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel3.Controls.Add(this.textBox1);
             this.panel3.Controls.Add(this.textBox5);
             this.panel3.Controls.Add(this.textBox3);
-            this.panel3.Location = new System.Drawing.Point(6, 224);
+            this.panel3.Location = new System.Drawing.Point(6, 194);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(246, 91);
+            this.panel3.Size = new System.Drawing.Size(218, 80);
             this.panel3.TabIndex = 20;
             // 
             // textBox1
             // 
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(105, 9);
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(96, 12);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(83, 16);
+            this.textBox1.Size = new System.Drawing.Size(83, 12);
             this.textBox1.TabIndex = 15;
             // 
             // textBox5
             // 
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(105, 54);
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.Location = new System.Drawing.Point(96, 48);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(83, 15);
+            this.textBox5.Size = new System.Drawing.Size(83, 10);
             this.textBox5.TabIndex = 20;
             // 
             // textBox3
             // 
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(103, 33);
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(96, 28);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(83, 15);
+            this.textBox3.Size = new System.Drawing.Size(83, 10);
             this.textBox3.TabIndex = 15;
             // 
             // textBox4
@@ -306,6 +312,18 @@
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.button1.ForeColor = System.Drawing.Color.Navy;
+            this.button1.Location = new System.Drawing.Point(681, 303);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(108, 23);
+            this.button1.TabIndex = 22;
+            this.button1.Text = "Cargar Datos";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Credenciales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -313,12 +331,13 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(901, 453);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.textBox4);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.textBox4);
             this.Controls.Add(this.panel2);
             this.MaximizeBox = false;
             this.Name = "Credenciales";
@@ -367,5 +386,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button1;
     }
 }

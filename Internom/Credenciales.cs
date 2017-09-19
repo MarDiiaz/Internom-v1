@@ -12,87 +12,14 @@ namespace Internom
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            openFileDialog1.InitialDirectory = @"C:\Users\MarD\Desktop\Residencias\Internom-v1\Internom\bin\Debug\fotos";
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
-            {
-                foto.Image = Image.FromFile(openFileDialog1.FileName);
-                foto.SizeMode = PictureBoxSizeMode.StretchImage;
-            }
-           
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            openFileDialog2.InitialDirectory = @"C:\Users\MarD\Desktop\Residencias\Internom-v1\Internom\QR codigos";
-            if (openFileDialog2.ShowDialog() == DialogResult.OK)
-            {
-              pictureBox3.BackgroundImage = Image.FromFile(openFileDialog2.FileName);
-             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            }
-
-
-        }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
             // Carga todos los datos del empleado para llenar la credencial 
         {
-            // obtiene el nombre del empleado  que coincida con el numero de nomina ingresado
-            SqlConnection con = new SqlConnection("Data Source = MARDIAZ\\SQLEXPRESS; Initial Catalog = internom; Initial Catalog = internom; Integrated Security = True");
-            string cadcon = "Select id_empleado,nombre,apellidos,cargo,nombre_dpto, seguro From empleados inner join departamentos on empleados.id_departamento=departamentos.id_departamento where no_nomina ='" +  textBox4.Text + "'";
-            //id_dpto.Text=(comboBox1.SelectedValue.ToString());
-            SqlCommand cm = new SqlCommand(cadcon, con);
-            con.Open();
-            SqlDataReader leer = cm.ExecuteReader();
-
-            if (leer.Read() == true)
-            {
-                string nombre = leer["nombre"].ToString();
-              string apellidos = leer["apellidos"].ToString();
-              string cargo = leer["cargo"].ToString();
-              string dpto = leer["nombre_dpto"].ToString();
-                string seguro = leer["seguro"].ToString();
-
-                
-                string nombre_completo =  nombre + " " +  apellidos ;
-                string puesto = cargo +" " +  dpto;
-                txtnombre.Text = nombre_completo;
-                txtnombre.TextAlign = HorizontalAlignment.Center;
-                txtcargo.Text = puesto;
-                txtcargo.TextAlign = HorizontalAlignment.Center;
-                textBox3.Text = seguro;
-                textBox3.TextAlign = HorizontalAlignment.Center;
-                textBox4.TextAlign = HorizontalAlignment.Center;
-                textBox5.Text = textBox4.Text;
-                textBox5.TextAlign = HorizontalAlignment.Center;
-                textBox1.TextAlign = HorizontalAlignment.Center;
-
-                string imagen;
-                imagen = textBox4.Text + ".jpg";
-                //// la carpeta de imagenes se encuentra ubicada en internom\bin\\debug\\fotos
-                foto.Load(Application.StartupPath + @"\fotos\" +imagen);
-                foto.SizeMode = PictureBoxSizeMode.StretchImage;
-
-                string codigo;
-                codigo = textBox4.Text + ".jpg";
-                //// la carpeta de imagenes se encuentra ubicada en internom\bin\\debug\\fotos
-               pictureBox3.Image = Image.FromFile(@"C:\Users\MarD\Desktop\Residencias\Internom-v1\Internom\QR codigos\" + imagen);
-               pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-
-
-            }
-
-            else
-            {
-                MessageBox.Show("No hay fotografia y/o codido de barras del empleado ");
-            }
+           
 
         }
-
-
-
-       
+        
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -205,10 +132,63 @@ namespace Internom
 
         private void button6_Click(object sender, EventArgs e)
         {
-
             PrincipalAdmin pa = new PrincipalAdmin();
             pa.Show();
             Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // obtiene el nombre del empleado  que coincida con el numero de nomina ingresado
+            SqlConnection con = new SqlConnection("Data Source = MARDIAZ\\SQLEXPRESS; Initial Catalog = internom; Initial Catalog = internom; Integrated Security = True");
+            string cadcon = "Select id_empleado,nombre,apellidos,cargo,nombre_dpto, seguro From empleados inner join departamentos on empleados.id_departamento=departamentos.id_departamento where no_nomina ='" + textBox4.Text + "'";
+            //id_dpto.Text=(comboBox1.SelectedValue.ToString());
+            SqlCommand cm = new SqlCommand(cadcon, con);
+            con.Open();
+            SqlDataReader leer = cm.ExecuteReader();
+
+            if (leer.Read() == true)
+            {
+                string nombre = leer["nombre"].ToString();
+                string apellidos = leer["apellidos"].ToString();
+                string cargo = leer["cargo"].ToString();
+                string dpto = leer["nombre_dpto"].ToString();
+                string seguro = leer["seguro"].ToString();
+
+
+                string nombre_completo = nombre + " " + apellidos;
+                string puesto = cargo + " " + dpto;
+                txtnombre.Text = nombre_completo;
+                txtnombre.TextAlign = HorizontalAlignment.Center;
+                txtcargo.Text = puesto;
+                txtcargo.TextAlign = HorizontalAlignment.Center;
+                textBox3.Text = seguro;
+                textBox3.TextAlign = HorizontalAlignment.Center;
+                textBox4.TextAlign = HorizontalAlignment.Center;
+                textBox5.Text = textBox4.Text;
+                textBox5.TextAlign = HorizontalAlignment.Center;
+                textBox1.TextAlign = HorizontalAlignment.Center;
+
+                string imagen;
+                imagen = textBox4.Text + ".jpg";
+                //// la carpeta de imagenes se encuentra ubicada en internom\bin\\debug\\fotos        
+                foto.Load(Application.StartupPath + @"\fotos\" + imagen);
+                foto.SizeMode = PictureBoxSizeMode.StretchImage;
+                string codigo;
+                codigo = textBox4.Text + ".jpg";
+                //// la carpeta de imagenes se encuentra ubicada en internom\bin\\debug\\fotos
+                pictureBox3.Image = Image.FromFile(@"C:\Users\MarD\Desktop\Residencias\Internom-v1\Internom\QR codigos\" + imagen);
+                pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
+
+            else
+            {
+                MessageBox.Show("No hay fotografia y/o codido de barras del empleado ");
+                foto.Load(Application.StartupPath + @"\fotos\log.png");
+                foto.SizeMode = PictureBoxSizeMode.StretchImage;
+
+            }
+
         }
     }
 }
